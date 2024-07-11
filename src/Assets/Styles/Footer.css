@@ -1,0 +1,21 @@
+.h {
+  opacity: 1;
+}
+
+.foot1 {
+  color: gray;
+}
+
+.foot2 {
+  color: gray;
+}
+
+.foot1 p {
+  color: white;
+  font-weight: bold;
+}
+
+.foot2 p {
+  color: white;
+  font-weight: bold;
+}
