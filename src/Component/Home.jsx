@@ -13,12 +13,37 @@ import image10 from "../Assets/Images/mobile.jpg";
 import image11 from "../Assets/Images/dress.jpg";
 import image12 from "../Assets/Images/person.jpg";
 import image13 from "../Assets/Images/access.jpg";
+import image14 from "../Assets/Images/french.jpg";
+import image15 from "../Assets/Images/big.jpg";
+import image16 from "../Assets/Images/dary.jpg";
+import image17 from "../Assets/Images/island.jpg";
+import image18 from "../Assets/Images/ke.jpg";
+import image19 from "../Assets/Images/ola.jpg";
+import image20 from "../Assets/Images/posh.jpg";
+import image21 from "../Assets/Images/rolls.jpg";
+import image22 from "../Assets/Images/spices.jpg";
+import image23 from "../Assets/Images/store.jpg";
+import image24 from "../Assets/Images/studio.jpg";
+import image25 from "../Assets/Images/thelab.jpg";
+import image26 from "../Assets/Images/thick.jpg";
+
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Footer from "./Footer";
 import Carousel from "react-bootstrap/Carousel";
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+
+
+
+
 
 const Home = () => {
+
+
+
   return (
     <div>
       <div className="home w-100 vh-600 ">
@@ -27,7 +52,7 @@ const Home = () => {
           <div>
             <div className="container">
               <div className="jumbotron">
-                <h1 className="power text-white  ">
+                <h1 className="power text-white position-relative mr-2  ">
                   Power your
                   <br />
                   business with DotPe
@@ -68,15 +93,15 @@ const Home = () => {
               </div>
               <br />
               <br />
-              <div className="container m-5">
+              <div className="container ">
                 <div className="row">
-                  <div className="col-md-3 d-flex flex-column align-items-center">
+                  <div className="col-md-3 d-flex flex-column align-items-center ">
                     <div className="thumbnail">
                       <img
                         src={image2}
                         alt="Lights"
-                        className="img-fluid rounded-5 "
-                        style={{ height: "500px", width: "300px" }}
+                        className="img-fluid rounded-5 mr-4"
+                        style={{ height: "500px", width: "400px" }}
                       />
                     </div>
                   </div>
@@ -86,7 +111,7 @@ const Home = () => {
                         src={image3}
                         alt="Nature"
                         className="img-fluid rounded-5 mt-5"
-                        style={{ height: "auto", width: "300px" }}
+                        style={{ height: "auto", width: "100%" }}
                       />
                     </div>
                   </div>
@@ -96,7 +121,7 @@ const Home = () => {
                         src={image4}
                         alt="Fjords"
                         className="img-fluid rounded-5 mb-5"
-                        style={{ height: "auto", width: "300px" }}
+                        style={{ height: "auto", width: "100%" }}
                       />
                     </div>
                   </div>
@@ -106,13 +131,11 @@ const Home = () => {
                         src={image5}
                         alt="Fjords"
                         className="img-fluid rounded-5 mt-5"
-                        style={{ height: "450px", width: "300px" }}
+                        style={{ height: "auto", width: "100%" }}
                       />
                     </div>
                   </div>
                 </div>
-                <br />
-                <br />
               </div>
             </div>
           </div>
@@ -120,9 +143,9 @@ const Home = () => {
         <div></div>
         <div></div>
       </div>
-
-      <div className="">
-        <div className="jumbotron1">
+<br/>
+      <div className="mt-5">
+        <div className="jumbotron1 m-5">
           <h1 className="fw-bold">
             Flexible{" "}
             <span style={{ color: "#50328A" }}>business solutions</span>
@@ -131,51 +154,55 @@ const Home = () => {
           </h1>
         </div>
 
-        <div className="row justify-content-around mt-5 ">
-          <div className="col-md-5 col-lg-4 mb-5">
-            <div className="card w-100 h-100">
-              <div className="card-body">
-                <h4 className="card-title fw-bold text-black ">POS</h4>
-                <p className="card-text fw-bold text-black">
-                  Sync your in-store and online business with the{" "}
-                  <span className="cardtext1">
-                    industry's leading Point of Sale.
-                  </span>
-                </p>
-                <a href="" className="know btn btn-link">
-                  Know More
-                  <FontAwesomeIcon
-                    icon={faArrowRight}
-                    className="ml-5"
-                    style={{ color: "#006AFF" }}
-                  />
-                </a>
+        <div className="container mt-5">
+          <div className="row justify-content-around">
+            <div className="col-md-5 col-lg-4 mb-5">
+              <div className="card w-100 h-100">
+                <img src={image6} className="card-img-top" alt="POS" />
+                <div className="card-body d-flex flex-column">
+                  <h4 className="card-title fw-bold text-black ">POS</h4>
+                  <p className="card-text fw-bold text-black">
+                    Sync your in-store and online business with the{" "}
+                    <span className="cardtext1">
+                      industry's leading Point of Sale.
+                    </span>
+                  </p>
+                  <div className="mt-auto">
+                    <a href="" className="know btn btn-link">
+                      Know More
+                      <FontAwesomeIcon
+                        icon={faArrowRight}
+                        className="ml-2"
+                        style={{ color: "#006AFF" }}
+                      />
+                    </a>
+                  </div>
+                </div>
               </div>
-              <img src={image6} className="card-img-bottom" alt="POS" />
             </div>
-          </div>
 
-          <div className="col-md-5 col-lg-4 mb-4">
-            <div className="card">
-              <div className="card-body">
-                <h5 className="card-title1 fw-bold text-black">Online Store</h5>
-                <p className="card-text3 fw-bold text-black">
-                  Go digital in minutes with your own e-commerce website.
-                </p>
-                <a href="" className="know btn btn-link">
-                  Know More
-                  <FontAwesomeIcon
-                    icon={faArrowRight}
-                    className="ml-2"
-                    style={{ color: "#006AFF" }}
-                  />
-                </a>
+            <div className="col-md-5 col-lg-4 mb-4">
+              <div className="card w-100 h-100">
+                <img src={image7} className="card-img-top" alt="Online Store" />
+                <div className="card-body d-flex flex-column">
+                  <h5 className="card-title1 fw-bold text-black">
+                    Online Store
+                  </h5>
+                  <p className="card-text3 fw-bold text-black">
+                    Go digital in minutes with your own e-commerce website.
+                  </p>
+                  <div className="mt-auto">
+                    <a href="" className="know btn btn-link">
+                      Know More
+                      <FontAwesomeIcon
+                        icon={faArrowRight}
+                        className="ml-2"
+                        style={{ color: "#006AFF" }}
+                      />
+                    </a>
+                  </div>
+                </div>
               </div>
-              <img
-                src={image7}
-                className="card-img-bottom"
-                alt="Online Store"
-              />
             </div>
           </div>
         </div>
@@ -305,43 +332,34 @@ const Home = () => {
               />
             </div>
           </div>
-          <div className="col-sm-4 d-flex flex-column justify-content-center align-items-start">
-            <h1 className="food text-white mb-1">Food & Beverages</h1>
-            <p className="tools text-white p-2 text-start">
-              Tools that connect the front of house with the back of house and
-              integrate everything that you need to run your restaurant into one
-              dashboard.
-            </p>
-            <button className="Know  bg-info text-white d-flex justify-content-start border-0">
-              <a href="" className="text-decoration-none text-white">
-                Know More
-              </a>
-            </button>
-          </div>
+          
         </div>
         <br />
       </div>
 
       <div className="row">
-        <img src={image13} alt="" className="access w-100 position-relative" />
-        <h1 className="work position-absolute fw-bold">
+        <img src={image13} alt="" className="access w-100" />
+        <h1 className="work fw-bold ">
           Dotpe works for all
           <br /> types, sizes & formats
           <br /> of businesses
         </h1>
       </div>
 
-      <div className="row">
+      <div className="row ">
         <div class="mt-4 p-5  text-black ">
-          <h1 className="lacs fw-bold ">75lacs+</h1>
+          <h2 className="lacs fw-bold ">75lacs+</h2>
           <p className="part fw-bold">Forward-thinking Partners</p>
         </div>
       </div>
 
-      <div className="bg-black h-100 w-100">
-        <Carousel data-bs-theme="dark">
+ 
+
+      <div className="bg-black h-100 w-100 ">
+        <h1 className="text-white m-5 p-5 ">Moments with our Merchants</h1>
+        <Carousel data-bs-theme="dark ">
           <Carousel.Item>
-            <div className="carouse d-flex m-5  justify-content-center">
+            <div className="carouse d-flex m-5  justify-content-center position-relative">
               <div className="m-4">
                 <h1 className="text-start fw-bold">
                   Karthik
@@ -355,7 +373,8 @@ const Home = () => {
                 <p className="text-start">
                   “Clarity of thought behind building
                   <br /> the modules and having an answer
-                  <br /> to the problems/use cases we brought up earned the<br/>
+                  <br /> to the problems/use cases we brought up earned the
+                  <br />
                   brownie points in choosing DotPe POS.”
                 </p>
               </div>
@@ -370,7 +389,7 @@ const Home = () => {
             </div>
           </Carousel.Item>
           <Carousel.Item>
-          <div className="carouse d-flex m-5  justify-content-center">
+            <div className="carouse d-flex m-5  justify-content-center">
               <div className="m-4">
                 <h1 className="text-start">
                   Karthik
@@ -384,7 +403,8 @@ const Home = () => {
                 <p className="text-start ">
                   “Clarity of thought behind building
                   <br /> the modules and having an answer
-                  <br /> to the problems/use cases we brought up earned the<br/>
+                  <br /> to the problems/use cases we brought up earned the
+                  <br />
                   brownie points in choosing DotPe POS.”
                 </p>
               </div>
@@ -399,7 +419,7 @@ const Home = () => {
             </div>
           </Carousel.Item>
           <Carousel.Item>
-          <div className="carouse d-flex m-5  justify-content-around">
+            <div className="carouse d-flex m-5  justify-content-around">
               <div className="m-4">
                 <h1 className="text-start m-4 fw-bold">
                   Karthik
@@ -413,7 +433,8 @@ const Home = () => {
                 <p className="text-start fw-bold">
                   “Clarity of thought behind building
                   <br /> the modules and having an answer
-                  <br /> to the problems/use cases we brought up earned the<br/>
+                  <br /> to the problems/use cases we brought up earned the
+                  <br />
                   brownie points in choosing DotPe POS.”
                 </p>
               </div>
@@ -429,6 +450,77 @@ const Home = () => {
           </Carousel.Item>
         </Carousel>
       </div>
+     <br/>
+     <br/>
+
+      <div className="mt-5">
+        <div className="m-5">
+        <h1 className="empower fw-bold">Empowering lacs of businesses, <br/>Enabling millions of transactions
+        </h1>
+        </div>
+        <div>
+        <OwlCarousel className='owl-theme m-2' loop  nav>
+    <div class='item'>
+       <img src={image14} alt="" className="h-50 w-50"/>
+    </div>
+    <div class='item'>
+    <img src={image15} alt="" className="h-50 w-50"/>
+    </div>
+    <div class='item'>
+    <img src={image16} alt="" className="h-50 w-50"/>
+    </div>
+    <div class='item'>
+    <img src={image17} alt="" className="h-50 w-50"/>
+    </div>
+    <div class='item'>
+    <img src={image18} alt="" className="h-50 w-50"/>
+    </div>
+    <div class='item'>
+    <img src={image19} alt="" className="h-50 w-50"/>
+    </div>
+    <div class='item'>
+    <img src={image20} alt="" className="h-50 w-50"/>
+    </div>
+    <div class='item'>
+    <img src={image21} alt="" className="h-50 w-50"/>
+    </div>
+    <div class='item'>
+    <img src={image22} alt="" className="h-50 w-50"/>
+    </div>
+    <div class='item'>
+    <img src={image23} alt="" className="h-50 w-50"/>
+    </div>
+    <div class='item'>
+    <img src={image24} alt="" className="h-50 w-50"/>
+    </div>
+    <div class='item'>
+    <img src={image25} alt="" className="h-50 w-50"/>
+    </div>
+    <div class='item'>
+    <img src={image26} alt="" className="h-50 w-50"/>
+    </div>
+</OwlCarousel>
+        </div>
+      </div>
+<br/>
+<br/>
+<div className="contain m-5 w-80">
+  <div>
+    <h1 className="build fw-bold text-center">Build and grow your<br/> business with DotPe.</h1>
+    <p className="tools">Get all the tools you need to take your business to the next<br/>
+     level & join the millions of merchants using DotPe.</p>
+  </div>
+  <br/>
+  <br/>
+  <div className="formclass d-flex justify-content-center align-items-center text-center" style={{ height: "20vh" }}>
+    <form action="" className="border p-3 d-flex rounded-5" style={{ width: "100%", maxWidth: "500px" }} >
+      <input type="text" placeholder="Enter your mobile number" className="form-control m-2" />
+      <button className="btn btn-primary m-2 w-100">Request Demo</button>
+    </form>
+  </div>
+</div>
+
+
       <br />
       <br />
       <Footer />
