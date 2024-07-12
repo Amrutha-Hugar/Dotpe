@@ -2,14 +2,18 @@
   background-color: rgb(60, 39, 95);
   height: 100%;
 }
-
+.card-body{
+  font-size: 20px;
+}
 .power {
-  font-size: 80px;
+  font-size: 150px;
 }
 
 .bill button {
   height: 10vh;
   width: 30vh;
+  padding: -10px;
+  font-size: 20px;
 }
 
 .container {
@@ -84,13 +88,9 @@
   opacity: 1;
 }
 
- 
-
-img { 
-  max-width: 100%; 
-} 
-
- 
+img {
+  max-width: 100%;
+}
 
 .carouse {
   background-color: rgb(248, 248, 248);
@@ -103,28 +103,27 @@ img {
   font-size: 50px;
 }
 
-.build{
+.build {
   font-size: 50px;
 }
 
-.tools{
+.tools {
   font-size: 30px;
   text-align: center;
 }
 
-.formclass input{
-  border: none;
-  
-}
-
-.formclass button{
+.formclass input {
   border: none;
 }
 
-.moment{
+.formclass button {
+  border: none;
+}
+
+.moment {
   font-size: 60px;
 }
-.item1{
+.item1 {
   background-color: antiquewhite;
   border-radius: 20px;
   align-items: center;
@@ -137,7 +136,7 @@ img {
   font-weight: bold;
 }
 
-.slide-text h3{
+.slide-text h3 {
   font-size: 20px;
   font-weight: bold;
 }
@@ -147,7 +146,6 @@ img {
   align-items: center;
   height: 100%;
   text-align: center;
- 
 }
 
 .slide-text {
@@ -166,24 +164,22 @@ img {
   height: auto;
 }
 
-.item{
+.item {
   max-width: 159.667px;
- 
 }
-
 
 .container {
   display: flex;
-  align-items: center; /* Align items vertically in the center */
-  justify-content: space-between; /* Distribute space between items */
+  align-items: center; 
+  justify-content: space-between; 
   padding: 20px;
-  cursor: pointer; /* Changes cursor to pointer for the entire container */
+  cursor: pointer; 
 }
 
 .text {
   flex: 1;
   padding: 10px;
-  cursor: pointer; /* Changes cursor to pointer when hovering over text */
+  cursor: pointer; 
 }
 
 .image {
@@ -192,9 +188,11 @@ img {
 }
 
 .image img {
-  width: 100%; /* Make the image responsive */
+  width: 100%; 
   height: auto;
-  border-radius: 8px; /* Optional: adds rounded corners */
+  border-radius: 8px; 
 }
 
-
+.col-12{
+  font-size: 30px;
+}

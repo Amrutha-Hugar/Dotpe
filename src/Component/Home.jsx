@@ -34,6 +34,7 @@ import Carousel from "react-bootstrap/Carousel";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+import TextImageSwitcher from "../Component/Textimage";
 
 const Home = () => {
   return (
@@ -42,7 +43,7 @@ const Home = () => {
         <Header />
         <div>
           <div>
-            <div className="container  d-flex flex-column" >
+            <div className="container  d-flex flex-column mt-5">
               <div className="jumbotron">
                 <h1 className="power text-white position-relative mr-2 ">
                   Power your
@@ -79,13 +80,13 @@ const Home = () => {
                 </div>
               </div>
               <div className="bill">
-                <button className="btn border-0 btn-primary rounded-5 fw-bold fs-5">
+                <button className="btn border-0 btn-primary rounded-5 fw-bold  ">
                   Get Started
                 </button>
               </div>
               <br />
               <br />
-              <div className="container ">
+              <div className="container3 ">
                 <div className="row">
                   <div className="col-md-3 d-flex flex-column align-items-center ">
                     <div className="thumbnail">
@@ -146,7 +147,7 @@ const Home = () => {
           </h1>
         </div>
 
-        <div className="container mt-5">
+        <div className="container5 mt-5">
           <div className="row justify-content-around">
             <div className="col-md-5 col-lg-4 mb-5">
               <div className="card">
@@ -219,7 +220,6 @@ const Home = () => {
               </a>
             </div>
             <img src={image8} className="card-img-bottom" alt="POS" />
-          
           </div>
         </div>
 
@@ -243,14 +243,12 @@ const Home = () => {
               </a>
             </div>
             <img src={image9} className="card-img-bottom" alt="Online Store" />
-            
           </div>
         </div>
       </div>
 
       <div className="row justify-content-around mt-5 ">
         <div className="col-md-5 col-lg-4 mb-5">
-      
           <div className="card w-100 h-100">
             <div className="card-body text-start m-3">
               <h4 className="card-title5 fw-bold text-black  ">Payments</h4>
@@ -268,14 +266,11 @@ const Home = () => {
               </a>
             </div>
             <img src={image10} className="card-img-bottom" alt="POS" />
-           
           </div>
-          
         </div>
 
         <div className="col-md-5 col-lg-4 mb-4">
           <div className="card w-100 h-100">
-          
             <div className="card-body text-start m-3">
               <h5 className="card-title5 fw-bold text-black">Delivery</h5>
               <p className="card-text fw-bold text-black m-2">
@@ -292,56 +287,16 @@ const Home = () => {
               </a>
             </div>
             <img src={image11} className="card-img-bottom" alt="Online Store" />
-          
           </div>
         </div>
       </div>
 
-      <div className="container-fluid bg-black h-100">
-        <div className="row">
-          <div className="col-12">
-            <h1 className="text-white text-center">
-              Ecosystem to sell everything
-              <br />
-              through DotPe
-            </h1>
-          </div>
-
-          <div className="row">
-            <div className="col-sm-4 d-flex flex-column justify-content-center align-items-start">
-              <h1 className="food text-white">Food & Beverages</h1>
-              <p className="tools text-white p-2 text-start">
-                Tools that connect the front of house with the back of house and
-                integrate everything that you need to run your restaurant into
-                one dashboard.
-              </p>
-              <button className="Know  bg-info text-white d-flex justify-content-start border-0">
-                <a href="" className="text-decoration-none text-white">
-                  Know More
-                </a>
-              </button>
-            </div>
-            <div className="col-sm-8 d-flex justify-content-center align-items-center">
-              <img
-                src={image12}
-                alt=""
-                className="img-fluid rounded-5 "
-                height={"800px"}
-                width={"600px"}
-              />
-            </div>
-          </div>
-        </div>
-        <br />
-      </div>
+      <TextImageSwitcher />
+      
 
       <div className="row">
         <div className="format">
-          <img
-            src={image13}
-            alt=""
-            className="access w-100 "
-          />
+          <img src={image13} alt="" className="access w-100 " />
         </div>
       </div>
 
@@ -351,113 +306,112 @@ const Home = () => {
           <p className="part fw-bold">Forward-thinking Partners</p>
         </div>
       </div>
-       
-    
 
       <div className="bg-black h-100 w-100 ">
-        <h1 className="moment text-white m-5 p-5 ">Moments with our Merchants</h1>
+        <h1 className="moment text-white m-5 p-5 ">
+          Moments with our Merchants
+        </h1>
         <Carousel>
-      <Carousel.Item
-        style={{
-          backgroundColor: "#F8F8F8",
-          height: "400px",
-          width: "1000px",
-          marginLeft: "250px",
-        }}
-        className="rounded-5"
-      >
-        <div className="d-flex justify-content-end align-items-center h-100">
-          <div className="slide-text text-black text-start m-5">
-            <h2>
-              Karthik
-              <br />
-              Raganatha
-            </h2>
-            <h3>
-              Assistant VP, eCommerce,
-              <br /> The ThickShake Factory
-            </h3>
-            <p>
-              “Clarity of thought behind building
-              <br /> the modules and having an answer
-              <br /> to the problems/use cases we brought up earned the
-              <br />
-              brownie points in choosing DotPe POS.”
-            </p>
-          </div>
-          <div className="slide-image ms-3">
-            <img
-              src="https://cdn.dotpe.in/dotpe-website-live/images/thick-shake-founder-image-160622.png"
-              alt="Image 1"
-              height={"300px"}
-              width={"300px"}
-            />
-          </div>
-        </div>
-      </Carousel.Item>
-      <Carousel.Item
-        style={{
-          backgroundColor: '#F8F8F8',
-          height: "400px",
-          width: "1000px",
-          marginLeft: "250px",
-        }}
-        className="rounded-5"
-      >
-        <div className="d-flex justify-content-end align-items-center h-100">
-          <div className="slide-text text-black text-start m-5">
-            <h2 className="heading-text">Rajat Jaiswal</h2>
-            <h3>Co-founder, Wat-a-Burger</h3>
-            <p>
-              “With DotPe's QR solutions, we've been able to reduce our 3rd party commission by
-              a whopping 98%.
-              Growing in this challenging fast food industry is not so difficult anymore, with
-              DotPe as our
-              partner.”
-            </p>
-          </div>
-          <div className="slide-image ms-3">
-            <img
-              src="https://cdn.dotpe.in/dotpe-website-live/images/wat-a-burger-founder-image-160622.png"
-              alt="Image 2"
-              height={"300px"}
-              width={"300px"}
-            />
-          </div>
-        </div>
-      </Carousel.Item>
-      <Carousel.Item
-        style={{
-          backgroundColor: "#F8F8F8",
-          height: "400px",
-          width: "1000px",
-          marginLeft: "250px",
-        }}
-        className="rounded-5"
-      >
-        <div className="d-flex justify-content-end align-items-center h-100">
-          <div className="slide-text text-black text-start m-5">
-            <h2 className="heading-text">Aparna Andrews</h2>
-            <h3>Co-Founder, Biryani Blues</h3>
-            <p>
-              “By far the best inventory management system in the entire market. We love the
-              flow and thought put
-              into developing the product.”
-            </p>
-          </div>
-          <div className="slide-image ms-3">
-            <img
-              src="https://cdn.dotpe.in/dotpe-website-live/images/biryani-blues-founder-image-160622.png"
-              alt="Image 3"
-              height={"300px"}
-              width={"300px"}
-            />
-          </div>
-        </div>
-      </Carousel.Item>
-    </Carousel>
-        <br/>
-        <br/>
+          <Carousel.Item
+            style={{
+              backgroundColor: "#F8F8F8",
+              height: "400px",
+              width: "1000px",
+              marginLeft: "250px",
+            }}
+            className="rounded-5"
+          >
+            <div className="d-flex justify-content-end align-items-center h-100">
+              <div className="slide-text text-black text-start m-5">
+                <h2>
+                  Karthik
+                  <br />
+                  Raganatha
+                </h2>
+                <h3>
+                  Assistant VP, eCommerce,
+                  <br /> The ThickShake Factory
+                </h3>
+                <p>
+                  “Clarity of thought behind building
+                  <br /> the modules and having an answer
+                  <br /> to the problems/use cases we brought up earned the
+                  <br />
+                  brownie points in choosing DotPe POS.”
+                </p>
+              </div>
+              <div className="slide-image ms-3">
+                <img
+                  src="https://cdn.dotpe.in/dotpe-website-live/images/thick-shake-founder-image-160622.png"
+                  alt="Image 1"
+                  height={"300px"}
+                  width={"300px"}
+                />
+              </div>
+            </div>
+          </Carousel.Item>
+          <Carousel.Item
+            style={{
+              backgroundColor: "#F8F8F8",
+              height: "400px",
+              width: "1000px",
+              marginLeft: "250px",
+            }}
+            className="rounded-5"
+          >
+            <div className="d-flex justify-content-end align-items-center h-100">
+              <div className="slide-text text-black text-start m-5">
+                <h2 className="heading-text">Rajat Jaiswal</h2>
+                <h3>Co-founder, Wat-a-Burger</h3>
+                <p>
+                  “With DotPe's QR solutions, we've been able to reduce our 3rd
+                  party commission by a whopping 98%. Growing in this
+                  challenging fast food industry is not so difficult anymore,
+                  with DotPe as our partner.”
+                </p>
+              </div>
+              <div className="slide-image ms-3">
+                <img
+                  src="https://cdn.dotpe.in/dotpe-website-live/images/wat-a-burger-founder-image-160622.png"
+                  alt="Image 2"
+                  height={"300px"}
+                  width={"300px"}
+                />
+              </div>
+            </div>
+          </Carousel.Item>
+          <Carousel.Item
+            style={{
+              backgroundColor: "#F8F8F8",
+              height: "400px",
+              width: "1000px",
+              marginLeft: "250px",
+            }}
+            className="rounded-5"
+          >
+            <div className="d-flex justify-content-end align-items-center h-100">
+              <div className="slide-text text-black text-start m-5">
+                <h2 className="heading-text">Aparna Andrews</h2>
+                <h3>Co-Founder, Biryani Blues</h3>
+                <p>
+                  “By far the best inventory management system in the entire
+                  market. We love the flow and thought put into developing the
+                  product.”
+                </p>
+              </div>
+              <div className="slide-image ms-3">
+                <img
+                  src="https://cdn.dotpe.in/dotpe-website-live/images/biryani-blues-founder-image-160622.png"
+                  alt="Image 3"
+                  height={"300px"}
+                  width={"300px"}
+                />
+              </div>
+            </div>
+          </Carousel.Item>
+        </Carousel>
+        <br />
+        <br />
       </div>
       <br />
       <br />
@@ -470,60 +424,21 @@ const Home = () => {
           </h1>
         </div>
         <div>
-          <OwlCarousel className="owl-theme" loop nav>
-            <div class="item">
-              <img src={image14} alt=""  />
+          <OwlCarousel className="owl-theme" loop nav margin={10} items={3}>
+            <div className="">
+              <img src={image14} alt="Image 14"    />
             </div>
-            <div class="item">
-              <img src={image15} alt=""  />
+            <div className="">
+              <img src={image15} alt="Image 15" />
             </div>
-            <div class="item">
-              <img src={image16} alt=""  />
+            <div className="">
+              <img src={image16} alt="Image 16" />
             </div>
-            <div class="item">
-              <img src={image17} alt="" />
+            <div className="">
+              <img src={image17} alt="Image 17" />
             </div>
-            <div class="item">
-              <img src={image18} alt=""  />
-            </div>
-            <div class="item">
-              <img src={image19} alt=""  />
-            </div>
-            <div class="item">
-              <img src={image20} alt=""  />
-            </div>
-            <div class="item">
-              <img src={image21} alt=""  />
-            </div>
-            <div class="item">
-              <img src={image22} alt=""  />
-            </div>
-            <div class="item">
-              <img src={image23} alt=""  />
-            </div>
-            <div class="item">
-              <img src={image24} alt=""  />
-            </div>
-            <div class="item">
-              <img src={image25} alt=""  />
-            </div>
-            <div class="item">
-              <img src={image26} alt=""  />
-            </div>
-            <div class="item">
-              <img src={image22} alt=""  />
-            </div>
-            <div class="item">
-              <img src={image23} alt=""  />
-            </div>
-            <div class="item">
-              <img src={image24} alt=""  />
-            </div>
-            <div class="item">
-              <img src={image25} alt=""  />
-            </div>
-            <div class="item">
-              <img src={image26} alt=""  />
+            <div className="">
+              <img src={image18} alt="Image 18" />
             </div>
           </OwlCarousel>
         </div>
