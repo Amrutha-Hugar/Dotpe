@@ -84,7 +84,13 @@
   opacity: 1;
 }
 
+ 
 
+img { 
+  max-width: 100%; 
+} 
+
+ 
 
 .carouse {
   background-color: rgb(248, 248, 248);
@@ -115,7 +121,9 @@
   border: none;
 }
 
-
+.moment{
+  font-size: 60px;
+}
 .item1{
   background-color: antiquewhite;
   border-radius: 20px;
@@ -123,3 +131,70 @@
   height: 300px;
   width: 100%;
 }
+
+.slide-text h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.slide-text h3{
+  font-size: 20px;
+  font-weight: bold;
+}
+.slide-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+ 
+}
+
+.slide-text {
+  flex: 1;
+  padding: 20px;
+  color: #fff; /* Change text color if necessary */
+}
+
+.slide-image {
+  flex: 1;
+  padding: 20px;
+}
+
+.slide-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.item{
+  max-width: 159.667px;
+ 
+}
+
+
+.container {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+  justify-content: space-between; /* Distribute space between items */
+  padding: 20px;
+  cursor: pointer; /* Changes cursor to pointer for the entire container */
+}
+
+.text {
+  flex: 1;
+  padding: 10px;
+  cursor: pointer; /* Changes cursor to pointer when hovering over text */
+}
+
+.image {
+  flex: 1;
+  padding: 10px;
+}
+
+.image img {
+  width: 100%; /* Make the image responsive */
+  height: auto;
+  border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+
