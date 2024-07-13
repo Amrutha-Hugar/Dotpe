@@ -23,11 +23,12 @@ const TextImageSwitcher = () => {
         <div className="d-flex justify-content-around m-5">
           <div className="text1">
             <div
+            
               className="text-section text-gray text-start text-top position-relative m-5"
               onMouseEnter={() => handleMouseEnter("https://cdn.dotpe.in/dotpe-website-live/images/latest-fnb-image-1-240622.jpg")}
               onMouseLeave={handleMouseLeave}
             >
-              <h1 className="m-2 p-2">Food & Beverage</h1>
+              <h1 className="m-2 p-2 ">Food & Beverage</h1>
               <p className="tool sm-2 p-2">Tools that connect the front of house with the back of house and<br /> integrate everything that you need to run your restaurant into one<br /> dashboard.</p>
               <button className="mm1 m-2 p-2">Know More</button>
             </div>
@@ -58,7 +59,7 @@ const TextImageSwitcher = () => {
               height={"400px"}
               width={"700px"}
             />
-            <div className="image-bottom m-5">
+            <div className="image-bottom m-5 d-flex">
               <img
                 src="https://cdn.dotpe.in/dotpe-website-live/images/latest-services-image-2-240622.jpg"
                 alt="Image 2"
@@ -70,7 +71,8 @@ const TextImageSwitcher = () => {
               <img
                 src="https://cdn.dotpe.in/dotpe-website-live/images/latest-services-image-3-240622.jpg"
                 alt="Image 3"
-                className="image-right m-5 rounded-5"
+                className="image-right  rounded-5 p-2 m-1"
+               
                 height={"300px"}
                 width={"400px"}
               />

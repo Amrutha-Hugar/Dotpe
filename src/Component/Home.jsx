@@ -26,7 +26,8 @@ import image23 from "../Assets/Images/store.jpg";
 import image24 from "../Assets/Images/studio.jpg";
 import image25 from "../Assets/Images/thelab.jpg";
 import image26 from "../Assets/Images/thick.jpg";
-
+import { useState } from "react";
+import { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Footer from "./Footer";
@@ -35,13 +36,52 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import TextImageSwitcher from "../Component/Textimage";
+import DynamicHeader from "./Dyanmicheader";
+import MobileHeader from "./Mobileheader";
+
 
 const Home = () => {
+
+
+  const [windowDimensions, setWindowDimensions] = useState(
+    getWindowDimensions()
+  );
+
+  function getWindowDimensions() {
+    const { innerWidth: width, innerHeight: height } = window;
+    return {
+      width,
+      height,
+    };
+  }
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  console.log(windowDimensions, "windowDimensions");
+
+
+
   return (
     <div>
       <div className="home w-100 vh-600 ">
-        <Header />
+      {windowDimensions.width < 766 ? (
+          <MobileHeader />
+        ) : (
+          <>
+            <DynamicHeader />
+            <Header />
+          </>
+        )}
+
         <div>
+          
           <div>
             <div className="container  d-flex flex-column mt-5">
               <div className="jumbotron">
@@ -53,7 +93,7 @@ const Home = () => {
               </div>
               <div className="container1">
                 <div className="row text-center text-white fw-bold d-flex justify-content-center ">
-                  <div className="col-12 col-md-6 d-flex flex-column flex-md-row justify-content-center align-items-center ">
+                  <div className="col-12 col-md-6 d-flex flex-column flex-md-row justify-content-center align-items-center" style={{textWrap:"nowrap"}}>
                     <div className="m-2">
                       <p>Point of Sale</p>
                     </div>
@@ -68,7 +108,7 @@ const Home = () => {
                     </div>
                   </div>
                   <div>
-                    <div className="d-flex flex-column flex-md-row justify-content-center  text-center align-items-center">
+                    <div className="payment d-flex flex-column flex-md-row justify-content-center  text-center align-items-center">
                       <div className="m-2">
                         <p>Payment Integration</p>
                       </div>
@@ -306,6 +346,7 @@ const Home = () => {
           <p className="part fw-bold">Forward-thinking Partners</p>
         </div>
       </div>
+      
 
       <div className="bg-black h-100 w-100 ">
         <h1 className="moment text-white m-5 p-5 ">
@@ -317,7 +358,7 @@ const Home = () => {
               backgroundColor: "#F8F8F8",
               height: "400px",
               width: "1000px",
-              marginLeft: "250px",
+              marginLeft: "450px",
             }}
             className="rounded-5"
           >
@@ -355,7 +396,7 @@ const Home = () => {
               backgroundColor: "#F8F8F8",
               height: "400px",
               width: "1000px",
-              marginLeft: "250px",
+              marginLeft: "450px",
             }}
             className="rounded-5"
           >
@@ -385,7 +426,7 @@ const Home = () => {
               backgroundColor: "#F8F8F8",
               height: "400px",
               width: "1000px",
-              marginLeft: "250px",
+              marginLeft: "450px",
             }}
             className="rounded-5"
           >
@@ -424,7 +465,7 @@ const Home = () => {
           </h1>
         </div>
         <div>
-          <OwlCarousel className="owl-theme" loop nav margin={10} items={3}>
+          <OwlCarousel className="owl-theme" loop nav margin={10} items={3} >
             <div className="">
               <img src={image14} alt="Image 14"    />
             </div>
@@ -439,6 +480,30 @@ const Home = () => {
             </div>
             <div className="">
               <img src={image18} alt="Image 18" />
+            </div>
+            <div className="h-25 w-25">
+              <img src={image19} alt="Image 18" />
+            </div>
+            <div className="h-25 w-25">
+              <img src={image20} alt="Image 18" />
+            </div>
+            <div className="h-25 w-25">
+              <img src={image21} alt="Image 18" />
+            </div>
+            <div className="">
+              <img src={image22} alt="Image 18" />
+            </div>
+            <div className="">
+              <img src={image23} alt="Image 18" />
+            </div>
+            <div className="">
+              <img src={image24} alt="Image 18" />
+            </div>
+            <div className="">
+              <img src={image25} alt="Image 18" />
+            </div>
+            <div className="">
+              <img src={image26} alt="Image 18" />
             </div>
           </OwlCarousel>
         </div>

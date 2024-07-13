@@ -6,7 +6,7 @@
   font-size: 20px;
 }
 .power {
-  font-size: 150px;
+  font-size: 120px;
 }
 
 .bill button {
@@ -194,5 +194,11 @@ img {
 }
 
 .col-12{
-  font-size: 30px;
+  font-size: 20px;
 }
+
+.payment{
+  font-size: 20px;
+}
+
+
