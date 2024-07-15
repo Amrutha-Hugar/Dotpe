@@ -38,6 +38,8 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 import TextImageSwitcher from "../Component/Textimage";
 import DynamicHeader from "./Dyanmicheader";
 import MobileHeader from "./Mobileheader";
+import CustomCarousel from "./carosel";
+
 
 
 const Home = () => {
@@ -178,29 +180,30 @@ const Home = () => {
       </div>
       <br />
       <div className="mt-5">
-        <div className="jumbotron1 m-5">
-          <h1 className="fw-bold">
-            Flexible{" "}
-            <span style={{ color: "#50328A" }}>business solutions</span>
-            <br />
-            for omni-channel selling
-          </h1>
-        </div>
+      <div className="jumbotron1 m-5 animate-bounce-up">
+      <h1 className=" fw-bold ">
+        Flexible{" "}
+        <span style={{ color: "#50328A" }}>business solutions</span>
+        <br />
+        for omni-channel selling
+      </h1>
+    </div>
+  
 
         <div className="container5 mt-5">
           <div className="row justify-content-around">
             <div className="col-md-5 col-lg-4 mb-5">
-              <div className="card">
-                <div className="card-body d-flex flex-column text-start m-3">
-                  <h4 className="card-title fw-bold text-black ">POS</h4>
-                  <p className="card-text fw-bold text-black">
+              <div className="card  ">
+                <div className="card-body d-flex flex-column text-start m-3  ">
+                  <h4 className="card-title fw-bold text-black ">POS </h4>
+                  <p className="card-text fw-bold text-black ">
                     Sync your in-store and online business with the{" "}
                     <span className="cardtext1">
                       industry's leading Point of Sale.
                     </span>
                   </p>
                   <div className="mt-auto">
-                    <a href="" className="know btn btn-link">
+                    <a href="" className="know btn btn-link  ">
                       Know More
                       <FontAwesomeIcon
                         icon={faArrowRight}
@@ -348,7 +351,11 @@ const Home = () => {
       </div>
       
 
-      <div className="bg-black h-100 w-100 ">
+      {windowDimensions.width < 766 ? (
+          <CustomCarousel />
+        ) : (
+          <>
+            <div className="bg-black h-100 w-100 ">
         <h1 className="moment text-white m-5 p-5 ">
           Moments with our Merchants
         </h1>
@@ -453,7 +460,10 @@ const Home = () => {
         </Carousel>
         <br />
         <br />
-      </div>
+      </div> 
+          </>
+        )}
+    
       <br />
       <br />
 

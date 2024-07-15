@@ -79,7 +79,7 @@ const DynamicHeader = () => {
         <a class="dropdown-item" href="#">
                 <div>
                     <img src="https://cdn.dotpe.in/dotpe-website-live/images/press-media-icon.png" alt="Image 3" width="25"/>
-                    <h3 className="fw-bold">Press & Media <FontAwesomeIcon icon={faArrowRight} size="1x" className="m-1 " /></h3>
+                    <h3 className="fw-bold" style={{fontSize:"15px" }} >Press & Media <FontAwesomeIcon icon={faArrowRight} size="1x" className="m-1 " /></h3>
                 </div>
                 </a>
         </div>

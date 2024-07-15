@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "../Assets/Styles/textimage.css"; // Import the CSS file
+import Mobilefood from "./Mobilefood";
+import {useEffect } from "react";
+
 
 const TextImageSwitcher = () => {
   const [imageSrc, setImageSrc] = useState("https://cdn.dotpe.in/dotpe-website-live/images/latest-fnb-image-1-240622.jpg");
@@ -12,9 +15,37 @@ const TextImageSwitcher = () => {
     setImageSrc("https://cdn.dotpe.in/dotpe-website-live/images/latest-fnb-image-1-240622.jpg");
   };
 
+  const [windowDimensions, setWindowDimensions] = useState(
+    getWindowDimensions()
+  );
+
+  function getWindowDimensions() {
+    const { innerWidth: width, innerHeight: height } = window;
+    return {
+      width,
+      height,
+    };
+  }
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  console.log(windowDimensions, "windowDimensions");
+
   return (
     <div className="container bg-black">
-      <div>
+          {windowDimensions.width < 766 ? (
+          <Mobilefood />
+        ) : (
+          <>
+        
+             <div>
         <h1 className="sell text-white text-start m-5 p-5">
           Ecosystem to sell everything<br /> through DotPe
         </h1>
@@ -28,8 +59,8 @@ const TextImageSwitcher = () => {
               onMouseEnter={() => handleMouseEnter("https://cdn.dotpe.in/dotpe-website-live/images/latest-fnb-image-1-240622.jpg")}
               onMouseLeave={handleMouseLeave}
             >
-              <h1 className="m-2 p-2 ">Food & Beverage</h1>
-              <p className="tool sm-2 p-2">Tools that connect the front of house with the back of house and<br /> integrate everything that you need to run your restaurant into one<br /> dashboard.</p>
+              <h1 className="m-2 p-2" style={{opacity:'2.5'}}>Food & Beverage</h1>
+              <p className="tool sm-2 p-2"  style={{opacity:'2.5'}}>Tools that connect the front of house with the back of house and<br /> integrate everything that you need to run your restaurant into one<br /> dashboard.</p>
               <button className="mm1 m-2 p-2">Know More</button>
             </div>
             <div
@@ -37,8 +68,8 @@ const TextImageSwitcher = () => {
               onMouseEnter={() => handleMouseEnter("https://cdn.dotpe.in/dotpe-website-live/images/latest-retail-image-1-240622.jpg")}
               onMouseLeave={handleMouseLeave}
             >
-              <h1 className="m-2 p-2">Retail</h1>
-              <p className="tool1 m-2 p-2">Everything you need to build and run your e-commerce website<br /> with tools like inventory management, marketing and more.</p>
+              <h1 className="m-2 p-2"  style={{opacity:'2.5'}}>Retail</h1>
+              <p className="tool1 m-2 p-2"  style={{opacity:'2.5'}}>Everything you need to build and run your e-commerce website<br /> with tools like inventory management, marketing and more.</p>
               <button className="mm2 m-2 p-2">Know More</button>
             </div>
             <div
@@ -46,8 +77,8 @@ const TextImageSwitcher = () => {
               onMouseEnter={() => handleMouseEnter("https://cdn.dotpe.in/dotpe-website-live/images/home/services-img-1.jpg")}
               onMouseLeave={handleMouseLeave}
             >
-              <h1 className="m-2 p-2">Services & Others</h1>
-              <p className="tool2 m-2 p-2">All the tools you need to deliver the best customer service with <br />features like ePOS and CRM. Flexible for any use case.</p>
+              <h1 className="m-2 p-2"  style={{opacity:'2.5'}}>Services & Others</h1>
+              <p className="tool2 m-2 p-2"  style={{opacity:'2.5'}}>All the tools you need to deliver the best customer service with <br />features like ePOS and CRM. Flexible for any use case.</p>
               <button className="mm3 m-2 p-2">Know More</button>
             </div>
           </div>
@@ -80,6 +111,9 @@ const TextImageSwitcher = () => {
           </div>
         </div>
       </div>
+          </>
+        )}
+     
     </div>
   );
 };
