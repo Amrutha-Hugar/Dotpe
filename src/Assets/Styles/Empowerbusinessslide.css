@@ -1,0 +1,53 @@
+/*  */
+.slider-container {
+    width: 100%;
+  }
+  
+  .slider-image {
+    width: 50%;
+    margin: 0 0px; /* Adjust this value to reduce the spacing */
+  }
+  
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media (max-width: 768px) {
+    .slider-image {
+      margin: 0 5px; /* Adjust this value for smaller screens */
+    }
+  }
+  
+
+
+  @media (max-width: 576px) {
+    .empower {
+      font-size: 20px; /* Adjusted font size for mobile screens */
+    }
+  }
+
+
+  .fade-in-text1 {
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    animation: AnimationfadeIn 3s;
+    -webkit-animation: AnimationfadeIn 3s;
+    -moz-animation: AnimationfadeIn 3s;
+    -o-animation: AnimationfadeIn 3s;
+    -ms-animation: AnimationfadeIn 3s;
+  }
+  
+  @keyframes AnimationfadeIn {
+    0% {
+      opacity: 0;
+      bottom:  -60px;
+    }
+    100% {
+      opacity: 1;
+      bottom: 0px;
+    }
+  }

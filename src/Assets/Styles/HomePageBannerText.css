@@ -1,0 +1,168 @@
+.HomePageBannerText-Container {
+    overflow: hidden;
+  }
+  
+  .HomePageBannerText > h1 {
+    color: white;
+    font-weight: 600;
+    font-size: 123px !important;
+    line-height: 134px;
+    margin-top: 120px;
+    padding: 10px;
+  
+   
+  }
+  
+  @media only screen and (max-width: 991px) {
+    .HomePageBannerText > h1 {
+      font-size: 64px !important;
+      line-height: 64px;
+    }
+  }
+  
+  @media only screen and (max-width: 766px) {
+    .HomePageBannerText > h1 {
+      font-size: 43px !important;
+      line-height: 43px;
+      font-weight: 700 !important;
+    }
+  }
+  
+  .HomePageBannerText-pointes {
+    width: 35%;
+    margin: 0 auto 1rem;
+  }
+  
+  .HomePageBannerText-pointes > ul {
+    list-style: none;
+  }
+  
+  .HomePageBannerText-pointes > ul > li {
+    position: relative;
+    display: inline-block;
+    color: #ae9bf1;
+    font-weight: 500;
+    padding: 0 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 20px;
+    font-family: 'Gilory';
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .HomePageBannerText-pointes {
+      width: 60%;
+    }
+  }
+  
+  @media (min-width: 320px) and (max-width: 767px) {
+    .HomePageBannerText-pointes {
+      width: 100%;
+      margin: 1.5rem auto 1rem;
+      padding: 0 2.5rem;
+      opacity: 0.5;
+    }
+  }
+  
+  .getStarted-btn {
+    align-items: center;
+    background-color: #007bff; 
+    border: none;
+    border-radius: 43px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1px;
+    margin:0 auto;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    font-size: 23px;
+    height: 70px;
+    padding: 2rem;
+    width: 200px;
+  }
+  
+  .getStarted-btn:hover{
+    background-color:#006aff;
+  }
+  .HomePageBannerImages-Container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+    margin-bottom: 6%;
+    gap: 20px;
+   
+  }
+  
+  .HomePageBannerImages-Container > .image1 {
+    width: 550px;
+    height: 650px;
+    border-radius: 40px;
+    margin-left: -4%;
+    margin-top: 80px;
+  }
+  
+  .HomePageBannerImages-Container > .image2 {
+    width: 300px;
+    height: 400px;
+    border-radius: 30px;
+    margin-top: 10%;
+  }
+  .HomePageBannerImages-Container > .image3 {
+    width: 300px;
+    height: 420px;
+    border-radius: 30px;
+    margin-bottom: -5%;
+  }
+  
+  .HomePageBannerImages-Container > .image4 {
+    width: 600px;
+    height: 630px;
+    border-radius: 40px;
+    margin-right: -6%;
+    margin-top: 80px;
+  }
+  
+  @media (min-width: 320px) and (max-width: 767px) {
+    .HomePageBannerImages-Container {
+      display: flex;
+      justify-content: center;
+      margin-top: 30%;
+      gap: 15px;
+    }
+  }
+
+
+      @media (min-width: 320px) and (max-width: 767px) {
+    .HomePageBannerImages-Container {
+      display: flex;
+      justify-content: center;
+      margin-top: 30%;
+      gap: 15px;
+    }
+    .HomePageBannerImages-Container > .image1 {
+      width: 140px;
+      height: 140px;
+      border-radius: 6px;
+      margin: 0px;
+    }
+
+
+  
+    .HomePageBannerImages-Container > .image2 {
+      width: 90px;
+      height: 140px;
+      border-radius: 6px;
+      margin-top: -7%;
+    }
+    .HomePageBannerImages-Container > .image3 {
+      width: 145px;
+      height: 145px;
+      border-radius: 6px;
+      margin-top: -4%;
+    }
+    .HomePageBannerImages-Container > .image4 {
+      display: none;
+    }
+  }
+  

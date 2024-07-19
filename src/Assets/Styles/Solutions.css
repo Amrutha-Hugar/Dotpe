@@ -1,0 +1,40 @@
+.know-btn{
+    background-color: #262626;
+    color: #ffffff;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.know-btn:hover{
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+
+.animated-text1 {
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  
+  .animated-text1.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+
+
+  .card-text {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  
+  .animate-text2 {
+    opacity: 1;
+    transform: translateY(0);
+  }
+ 

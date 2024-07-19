@@ -1,0 +1,174 @@
+.Merchants-container {
+  background-color: #000000;
+  padding: 6rem 0 2rem;
+  width: 100%;
+  @media (min-width: 320px) and (max-width: 767px) {
+    padding: 4rem 0 2rem;
+  }
+  .title {
+    color: #ffffff;
+    text-align: center;
+    font-size: 56px;
+    font-weight: bold;
+    margin: 0 auto 6rem;
+  }
+  .merchent-slider-Item-outer {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    .merchent-slider-Item {
+      position: relative;
+      background-color: #f8f8f8;
+      padding: 80px;
+      border-radius: 1.5rem;
+      height: 480px;
+      width: 90%;
+      display: flex;
+
+      .merchent-card-text {
+        max-width: 60%;
+        text-align: left;
+        .merchent-name {
+          font-size: 60px;
+          margin-bottom: 2rem;
+          font-weight: 700;
+          line-height: 3rem;
+        }
+        .merchent-designation {
+          font-size: 1.375rem;
+          font-weight: 700;
+          font-style: italic;
+          margin-bottom: 1rem;
+        }
+        .merchent-quote {
+          font-size: 1.140rem;
+          line-height: 2rem;
+          font-style: italic;
+          font-weight: 500;
+        }
+
+        @media (min-width: 320px) and (max-width: 767px) {
+          max-width: 100%;
+          .merchent-name {
+            font-size: 24px;
+            font-weight: 800;
+            line-height: 22px;
+          }
+          .merchent-designation {
+            font-size: 14px;
+            font-weight: 800;
+          }
+          .merchent-quote {
+            text-align: left;
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 500;
+          }
+        }
+        @media (min-width: 767px) and (max-width: 1000px) {
+          .merchent-name {
+            font-size: 24px;
+          }
+          .merchent-designation {
+            font-size: 14px;
+          }
+          .merchent-quote {
+            font-size: 16px;
+          }
+        }
+        @media (min-width: 1000px) and (max-width: 1200px) {
+          width: 45%;
+        }
+        @media (min-width: 1000px) and (max-width: 1200px) {
+          width: 45%;
+        }
+        @media (min-width: 1200px) and (max-width: 1450px) {
+          width: 50%;
+        }
+      }
+      .merchent-card-img {
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+
+        position: absolute;
+        width: 300px;
+        right: 70px;
+        bottom: 0;
+        @media (min-width: 320px) and (max-width: 767px) {
+          width: 140px;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          margin: 0 auto;
+        }
+        @media (min-width: 767px) and (max-width: 1000px) {
+          width: 200px;
+        }
+        @media (min-width: 1000px) and (max-width: 1200px) {
+          width: 200px;
+        }
+        @media (min-width: 1200px) and (max-width: 1450px) {
+          width: 250px;
+        }
+      }
+      @media (min-width: 320px) and (max-width: 630px) {
+        height: 560px;
+        width: 90%;
+        padding: 1.5rem 2rem;
+        text-align: center;
+      }
+      @media (min-width: 630px) and (max-width: 767px) {
+        height: 540px;
+        width: 350px;
+        padding: 1.5rem 2rem;
+        text-align: center;
+      }
+      @media (min-width: 767px) and (max-width: 1000px) {
+        height: 380px;
+      }
+      @media (min-width: 1200px) and (max-width: 1450px) {
+        height: 480px;
+        width: 90%;
+      }
+      @media (min-width: 1450px) and (max-width: 1650px) {
+        height: 480px;
+        width: 900px;
+      }
+      @media (min-width: 1650px) and (max-width: 1850px) {
+        height: 580px;
+        width: 1000px;
+      }
+      @media (min-width: 1850px) and (max-width: 2000px) {
+        height: 580px;
+        width: 1100px;
+      }
+      @media (min-width: 2000px) and (max-width: 2300px) {
+        height: 580px;
+        width: 1200px;
+      }
+    }
+  }
+  .arrows {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    .left-btn,
+    .right-btn {
+      width: 40px;
+      height: 40px;
+      color: #ffffff !important;
+      font-size: 32px !important;
+      border: 1px solid #ffffff !important;
+      line-height: 40px !important;
+      text-align: center;
+      border-radius: 24px;
+      margin: 0.5rem;
+      opacity: 0.4;
+      transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      background-color: black;
+    }
+  }
+}

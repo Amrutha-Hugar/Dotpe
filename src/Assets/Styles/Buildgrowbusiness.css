@@ -1,0 +1,22 @@
+.fade-in-text2 {
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    animation: AnimationfadeIn 3s;
+    -webkit-animation: AnimationfadeIn 3s;
+    -moz-animation: AnimationfadeIn 3s;
+    -o-animation: AnimationfadeIn 3s;
+    -ms-animation: AnimationfadeIn 3s;
+  }
+  
+  @keyframes AnimationfadeIn {
+    0% {
+      opacity: 0;
+      bottom: -30px;
+    }
+    100% {
+      opacity: 1;
+      bottom: 0px;
+    }
+  }

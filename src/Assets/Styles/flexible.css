@@ -1,28 +1,75 @@
 .jumbotron1 {
-    height: 200px;
-    position: relative;
+  height: 300px;
+  position: relative;
+  margin-top: 170px;
+}
+
+.fade-in-text {
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  width: 100%;
+  animation: AnimationfadeIn 3s;
+  -webkit-animation: AnimationfadeIn 3s;
+  -moz-animation: AnimationfadeIn 3s;
+  -o-animation: AnimationfadeIn 3s;
+  -ms-animation: AnimationfadeIn 3s;
+}
+
+@keyframes AnimationfadeIn {
+  0% {
+    opacity: 0;
+    bottom: -50px;
   }
-  
-  .fade-in-text {
-    position: absolute;
+  100% {
+    opacity: 1;
     bottom: 0px;
+  }
+}
+
+/* @media (min-width: 320px) and (max-width: 767px) {
+  .jumbotron1 {
+    height: 150px;
+  }
+  .jumbotron1 > .animationText {
+    font-size: 34px;
+    width: 98%;
+    margin: 0 auto 3rem;
     text-align: center;
-    width: 100%;
-    animation: AnimationfadeIn 3s;
-    -webkit-animation: AnimationfadeIn 3s;
-    -moz-animation: AnimationfadeIn 3s;
-    -o-animation: AnimationfadeIn 3s;
-    -ms-animation: AnimationfadeIn 3s;
+    line-height: 34px;
+    font-weight: 700;
   }
-  
-  @keyframes AnimationfadeIn {
-    0% {
-      opacity: 0;
-      bottom: -50px;
-    }
-    100% {
-      opacity: 1;
-      bottom: 0px;
-    }
+}
+
+@media only screen and (max-width: 435px) {
+  .jumbotron1 {
+    height: 250px;
   }
-  
+} */
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .jumbotron1 {
+    height: 500px; /* Adjusts height based on content */
+    padding: 10px; /* Adds padding to prevent overlap */
+  }
+  .jumbotron1 > .animationText {
+    font-size: 17px; /* Slightly smaller font size */
+    width: 98%;
+    margin: 0 auto 1rem; /* Adjust margin for better spacing */
+    text-align: center;
+    line-height: 1.2; /* Adjust line height for readability */
+    font-weight: 500;
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  .jumbotron1 {
+    height: 800px; /* Ensures height is adaptive */
+    padding: 18px; /* Consistent padding */
+  }
+  .jumbotron1 > .animationText {
+    font-size: 17px; /* Further reduce font size for very small screens */
+    line-height: 1.2; /* Maintain line height for readability */
+  }
+}

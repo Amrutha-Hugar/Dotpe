@@ -1,62 +1,23 @@
-import React, { useState } from "react";
-import image1 from "../Assets/Images/dotpe.jpg";
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap/dist/js/bootstrap.bundle.min";
-import "bootstrap/dist/css/bootstrap.min.css";
-import Dropdown from "react-bootstrap/Dropdown";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
-import { Collapse, Button } from 'react-bootstrap';
+import React from "react";
+import "../Assets/Styles/Businesstype.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-
-const MobileHeader = () => {
-  const [showMenue, setShowMenue] = useState(false);
-  const [open, setOpen] = useState(false);
-  const [press,setpress] =useState(false);
-
- 
+export default function NavItems() {
   return (
-    <div>
-      <div
-        style={{
-          background: "white",
-          padding: "20px",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-        }}
-      >
-        <div className="col-sm-4  p-2 ">
-          <img src={image1} alt="" />
-        </div>
-        <div onClick={() => setShowMenue(!showMenue)}>  <FontAwesomeIcon icon={faBars} /></div>
-      </div>
-      {showMenue ? (
-        <div
+    <div className="drop">
+      <div className="dropdown">
+        <button
+          className="dropbtn  text-white"
           style={{
-            background: "white",
-             padding: "20px",
-           
+            fontWeight: 600,
+            fontSize: "27px",
           }}
         >
-
-<div>
-<div>
-      <Button
-        onClick={() => setOpen(!open)}
-        aria-controls="example-collapse-text"
-        aria-expanded={open}
-        variant="link"
-        className="text-black text-decoration-none fw-bold d-flex justify-content-between"
-  style={{ width: '100%' }} // Ensure the button takes full width
-      >
-       Business Type <FontAwesomeIcon icon={open ? faMinus : faPlus} />
-      </Button>
-      <Collapse in={open}>
-        <div id="example-collapse-text" className=" ">
-        <a class="dropdown-item" href="#">
+          Business Types
+        </button>
+        <div className="dropdown-content">
+          <a class="dropdown-item" href="#">
             <div className="d-flex align-items-baseline dropdown-item-title">
               <img
                 src="https://cdn.dotpe.in/dotpe-website-live/images/food-beverage-icon.png"
@@ -75,14 +36,14 @@ const MobileHeader = () => {
                       marginRight: "15px",
                     }}
                   >
-                  <h6>  Food & Beverage Industry</h6>{" "}
+                  <h4>  Food & Beverage Industry</h4>{" "}
                   </div>
                   <FontAwesomeIcon
                     icon={faArrowRight}
                     size="1x"
-                    className="mt-1 p-1 animated-navArrow"
+                    className="mt-2 p-1 animated-navArrow"
                     style={{
-                      marginBottom: "10px",
+                      marginBottom: "5px",
                     }}
                   />
                 </div>
@@ -93,10 +54,8 @@ const MobileHeader = () => {
                 </p>
               </div>
             </div>
-            
+            <br/>
           </a>
-
-
           <a class="dropdown-item" href="#">
             <div className="d-flex align-items-baseline dropdown-item-title">
               <img
@@ -117,14 +76,14 @@ const MobileHeader = () => {
                       
                     }}
                   >
-                    <h6>Retail</h6>{" "}
+                    <h4>Retail</h4>{" "}
                   </div>
                   <FontAwesomeIcon
                     icon={faArrowRight}
                     size="1x"
                     className=" animated-navArrow"
                     style={{
-                      marginBottom:'10px'
+                      margintop: "10px",
                     }}
                   />
                 </div>
@@ -135,7 +94,7 @@ const MobileHeader = () => {
                 </p>
               </div>
             </div>
-          
+            <br/>
           </a>
           <a class="dropdown-item" href="#">
             <div className="d-flex align-items-baseline dropdown-item-title">
@@ -156,14 +115,14 @@ const MobileHeader = () => {
                       marginRight: "15px",
                     }}
                   >
-                    <h6> Services & Others </h6>{" "}
+                    <h4> Services & Others </h4>{" "}
                   </div>
                   <FontAwesomeIcon
                     icon={faArrowRight}
                     size="1x"
                     className="mt-1 p-1 animated-navArrow"
                     style={{
-                      marginBottom: "10px",
+                      marginBottom: "5px",
                     }}
                   />
                 </div>
@@ -176,54 +135,56 @@ const MobileHeader = () => {
             </div>
           </a>
         </div>
+      </div>
+      <div className="dropdown">
+        <button
+          className="dropbtn  text-white"
+          style={{
+            fontWeight: 500,
+            fontSize: "27px",
+          }}
+        >
+          Company
+        </button>
+        <div className="dropdown-content">
+          <a class="dropdown-item" href="#">
+            <div className="d-flex align-items-baseline dropdown-item-title">
+              <img
+                src="https://cdn.dotpe.in/dotpe-website-live/images/press-media-icon.png"
+                alt="Image 1"
+                width="16"
+                style={{
+                  marginRight: "15px",
+                }}
+              />
 
-
-      </Collapse>
-    </div>
-</div>
-  
-
-
-    <div className="text-start  ">
-    <Button
-  onClick={() => setpress(!press)}
-  aria-controls="example-collapse-text"
-  aria-expanded={press}
-  variant="link"
-  className="text-black text-decoration-none fw-bold d-flex justify-content-between"
-  style={{ width: '100%' }} 
->
-  <span>Company</span>
-  <span>
-    <FontAwesomeIcon icon={press ? faMinus : faPlus} />
-  </span>
-
-
-
-</Button>
-      <Collapse in={press}>
-        <div id="example-collapse-text">
-        <a class="dropdown-item" href="#">
-                <div className="d-flex">
-                    <img src="https://cdn.dotpe.in/dotpe-website-live/images/press-media-icon.png" alt="Image 1" width="15" height={"20px"} className="mt-3"/>
-                    <p className="fw-bold m-3" style={{fontSize:'15px'}}>Press & Media </p>
+              <div>
+                <div className="d-flex align-items-center">
+                  <div
+                    className="fw-bold"
+                    style={{
+                      marginRight: "15px",
+                    }}
+                  >
+                    <h6>Press & Media</h6>
+                  </div>
+                  <FontAwesomeIcon
+                    icon={faArrowRight}
+                    size="1x"
+                    className="  animated-navArrow"
+                    style={{
+                      margintop: "20px",
+                    }}
+                  />
                 </div>
-                
-            </a>
-        
+               
+              </div>
+            </div>
+          </a>
+          
+       
         </div>
-
-        
-      </Collapse>
-    </div>
-    
-  
-        </div>
-      ) : (
-        <></>
-      )}
+      </div>
     </div>
   );
-};
-
-export default MobileHeader;
+}

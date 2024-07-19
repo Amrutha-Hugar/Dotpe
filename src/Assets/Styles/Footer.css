@@ -19,3 +19,14 @@
   color: white;
   font-weight: bold;
 }
+
+
+.footer {
+  position: relative;
+  width: 100%;
+  display: block;
+  background-color: #000000;
+  padding: 60px 0 30px;
+  overflow: hidden;
+  margin-top: -1px;
+}

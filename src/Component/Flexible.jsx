@@ -22,7 +22,7 @@ export default function AnimationText() {
 
   return (
     <div className="jumbotron1">
-      <h1 className="animationText fw-bold fade-in-text">
+      <h1 className="animationText fw-bold fade-in-text" style={{fontSize:'80px'}}>
         Flexible <span style={{ color: "#50328A" }}>business solutions</span>
         <br />
         for omni-channel selling

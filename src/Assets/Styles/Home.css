@@ -1,39 +1,24 @@
-.home {
-  background-color: rgb(60, 39, 95);
+.home-container {
   height: 100%;
 }
-.card-body{
-  font-size: 20px;
+.purpleContainer {
+  background-color: rgb(25, 27, 65); /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom left,rgb(20, 20, 31), #241738,rgb(25, 27, 65),rgb(19, 19, 31));
+  /* background-image: linear-gradient(to bottom right,rgb(20, 20, 31), #3c2561,rgb(25, 27, 65),rgb(19, 19, 31)); */
   
 }
 
 
-.power {
-  font-size: 130px;
-}
 
-.bill button {
-  height: 60px;
-  width: 20vh;
-  padding: -10px;
-  font-size: 25px;
-}
 
-.container {
-  max-width: 100%;
-}
 
-.jumbotron1 h1 {
-  font-size: 60px;
-  
-  z-index: 1;
-}
+
+
 
 
 
 .know {
   text-decoration: none;
- 
 }
 
 .col-sm-4 {
@@ -57,37 +42,30 @@
   border-radius: 30px;
 }
 
-.beverage2:hover {
-  color: white;
-}
 
-.beverage2 button a {
-  text-decoration: none;
-  color: white;
-}
 
-.beverage2 button {
-  border: 2px solid black;
-  border-radius: 8px;
-  height: 5vh;
-  background-color: gray;
-}
-
-.beverage2 button:hover {
-  background-color: #006aff;
-}
-
-.maze img {
-  border-radius: 20px;
-}
 
 .lacs {
-  font-size: 100px;
-  color: #8a0834;
+  font-size:250px;
+  background: -webkit-linear-gradient(#f02525, #352261,#2b1a41);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+@media (max-width: 768px) {
+  .lacs {
+    font-size: 4rem; /* Adjust the size as needed */
+  }
+  .part > p {
+    font-size: 10px;
+    /* Adjust the size as needed */
+  }
 }
 
 .part {
-  font-size: 50px;
+  font-size: 70px;
 }
 
 .access {
@@ -176,16 +154,16 @@ img {
 
 .container {
   display: flex;
-  align-items: center; 
-  justify-content: space-between; 
+  align-items: center;
+  justify-content: space-between;
   padding: 20px;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .text {
   flex: 1;
   padding: 10px;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .image {
@@ -194,20 +172,15 @@ img {
 }
 
 .image img {
-  width: 100%; 
+  width: 100%;
   height: auto;
-  border-radius: 8px; 
+  border-radius: 8px;
 }
 
-.col-12{
+.col-12 {
   font-size: 20px;
 }
 
-.payment{
+.payment {
   font-size: 20px;
 }
-
-
-
-
-
