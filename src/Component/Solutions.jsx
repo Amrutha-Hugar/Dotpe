@@ -157,6 +157,7 @@ export default function Solutions() {
                 Accept payments quickly, easily & securely. Let shoppers pay
                 their way with multiple payment options.
               </p>
+              <br/>
               <a href="" className="know btn btn-link m-2" style={{fontSize:"22px",fontWeight:"600"}}>
                 Know More
                 <img className="m-2"   src="https://cdn.dotpe.in/dotpe-website-live/images/right-arrow-1.png" alt="" />
@@ -167,7 +168,7 @@ export default function Solutions() {
         </div>
 
         <div className="col-md-5 col-lg-4 mb-4">
-        <div className="card w-100 h-100 rounded-5">
+        <div className="card rounded-5">
             <div className="card-body text-start m-3">
             <h4 ref={textRef} className={`card-title fw-bold text-black m-2 animated-text1 ${isVisible ? 'visible' : ''}`} style={{fontSize:'40px', position:'relative'}}>Delivery </h4>
               <p className={`card-text text-black p-3 ${isVisible ? 'animate-text2' : ''}`} style={{fontSize: "18px",
@@ -178,6 +179,7 @@ export default function Solutions() {
                 Smartly manage all your deliveries with our seamless 3rd party
                 integrations & Swiftly Delivered, Right on Time.
               </p>
+              <br/>
               <a href="" className="know btn btn-link m-2" style={{fontSize:"22px",fontWeight:"600"}}>
                 Know More
                 <img className="m-2"   src="https://cdn.dotpe.in/dotpe-website-live/images/right-arrow-1.png" alt="" /> 

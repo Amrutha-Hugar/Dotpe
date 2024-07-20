@@ -30,3 +30,37 @@
   overflow: hidden;
   margin-top: -1px;
 }
+
+
+@media (max-width: 412px) {
+  .foot-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-left: 150px;
+    text-align: center;
+  }
+
+  .foot1, .foot2 {
+    width: 50%;
+  }
+
+  .foot h4 {
+    margin-bottom: 10px;
+  }
+
+  .pay {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .pay img {
+    margin: 10px 0;
+  }
+
+  .pay p {
+    margin: 10px 0;
+  }
+}

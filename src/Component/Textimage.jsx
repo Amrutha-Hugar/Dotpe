@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "../Assets/Styles/textimage.css"; // Import the CSS file
+import "../Assets/Styles/textimage.css"; 
 import Mobilefood from "./Mobilefood";
-import { useEffect } from "react";
+import { useEffect,useRef } from "react";
 
 const TextImageSwitcher = () => {
   const [imageSrc, setImageSrc] = useState({
@@ -51,6 +51,37 @@ const TextImageSwitcher = () => {
 
   console.log(windowDimensions, "windowDimensions");
 
+
+  const elementRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+          } else {
+            setIsVisible(false);
+          }
+        });
+      },
+      {
+        threshold: 0.1, // Adjust this threshold as needed
+      }
+    );
+
+    if (elementRef.current) {
+      observer.observe(elementRef.current);
+    }
+
+    return () => {
+      if (elementRef.current) {
+        observer.unobserve(elementRef.current);
+      }
+    };
+  }, []);
+
   return (
     <div className="containersolution">
       {windowDimensions.width < 766 ? (
@@ -59,7 +90,7 @@ const TextImageSwitcher = () => {
         <>
           <div className="">
             <div className="sell">
-            <h1 className="text-start">
+            <h1  ref={elementRef} className={`text-start ${isVisible ? 'slide-in-down' : ''}`}>
               Ecosystem to sell everything
               <br /> through DotPe
             </h1>
@@ -80,7 +111,7 @@ const TextImageSwitcher = () => {
                   }
                   onMouseLeave={handleMouseLeave}
                 >
-                  <div className="" style={{marginLeft:'5%'}}>
+                  <div className={`food-and-beverage ${isVisible ? 'slide-in-left' : ''}`} style={{marginLeft:'5%'}}>
                   <h1 className="m-2 p-2" style={{ opacity: "1" }}>
                     Food & Beverage
                   </h1>
@@ -106,7 +137,7 @@ const TextImageSwitcher = () => {
                   }
                   onMouseLeave={handleMouseLeave}
                 >
-               <div style={{marginLeft:'5%'}}>
+               <div  className={`Retail ${isVisible ? 'slide-in-left' : ''}`} style={{marginLeft:'5%'}}>
                <h1 className="m-2 p-2" >
                     Retail
                   </h1>
@@ -132,7 +163,7 @@ const TextImageSwitcher = () => {
                   }
                   onMouseLeave={handleMouseLeave}
                 >
-                 <div style={{marginLeft:'5%'}}>
+                 <div  className={`Services-and-Others ${isVisible ? 'slide-in-left' : ''}`}style={{marginLeft:'5%'}}>
                  <h1 className="m-2 p-2" >
                     Services & Others
                   </h1>

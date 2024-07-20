@@ -15,7 +15,7 @@ import image23 from "../Assets/Images/store.jpg";
 import image24 from "../Assets/Images/studio.jpg";
 import image25 from "../Assets/Images/thelab.jpg";
 import image26 from "../Assets/Images/thick.jpg";
-import "../Assets/Styles/Buildgrowbusiness.css"
+
 
 
 
@@ -38,7 +38,7 @@ const images = [
 const Empowerbusinessslide = () => {
   const settings = {
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 6,
     slidesToScroll: 1,
     autoplay: true,
     speed: 2000,
@@ -65,7 +65,7 @@ const Empowerbusinessslide = () => {
     observer.observe(document.querySelector(".empower2"));
   }, []);
   return (
-    <div>
+    
       <div className="mt-5">
         <div className="empower2 m-5">
           <h1 className="empower fw-bold  fade-in-text1" style={{fontSize:'70px', marginTop:'220px',position:'relative'}}>
@@ -73,8 +73,9 @@ const Empowerbusinessslide = () => {
             Enabling millions of transactions
           </h1>
         </div>
+        <br/>
         <div className="slider-container d-flex justify-content-center">
-          <Slider {...settings} style={{ width: "60%" }}>
+          <Slider {...settings} style={{ width: "80%" }}>
             {images.map((image, index) => (
               <div key={index}>
                 <img src={image} alt="" className="slider-image" />
@@ -83,7 +84,7 @@ const Empowerbusinessslide = () => {
           </Slider>
         </div>
       </div>
-    </div>
+
   );
 };
 

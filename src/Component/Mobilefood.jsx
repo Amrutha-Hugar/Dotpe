@@ -22,7 +22,7 @@ const Mobilefood = () => {
             fontSize:"30px"
           }}
         >
-          <div className="text-center">Ecosystem to sell<br />  everything<br /> through DotPe</div>
+          <div className="text-start">Ecosystem to sell  everything through DotPe</div>
         </div>
 
          

@@ -7,14 +7,21 @@ import image14 from "../Assets/Images/linked.jpg";
 
 import { useState, useEffect } from "react";
 
+
+
 const Footer = () => {
+
+
+  
+  
   return (
     <div>
-      <div className="footer bg-black w-100" style={{ height: "600px" }}>
+      
+      <div className="footer bg-black w-100" style={{ height: "500px" }}>
         <div className="foot-container ">
           <div
             className="foot d-flex text-white justify-content-center "
-            style={{ gap: "180px", marginTop: "6px" }}
+            style={{ gap: "180px", marginTop: "6px", marginRight:'150px' }}
           >
             <div className="foot1 mt-5">
               <h4 className="text-gray text-start">Business</h4>
@@ -38,7 +45,7 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <hr className="h" style={{ marginTop: "5px" }} />
+          <hr className="h" style={{ marginTop: "2px" }} />
           <br />
           <br />
           <div className="pay d-flex justify-content-around">
@@ -98,6 +105,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+   
     </div>
   );
 };

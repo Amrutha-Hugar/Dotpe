@@ -48,28 +48,20 @@
 } */
 
 
-@media (min-width: 320px) and (max-width: 767px) {
-  .jumbotron1 {
-    height: 500px; /* Adjusts height based on content */
-    padding: 10px; /* Adds padding to prevent overlap */
-  }
-  .jumbotron1 > .animationText {
-    font-size: 17px; /* Slightly smaller font size */
-    width: 98%;
-    margin: 0 auto 1rem; /* Adjust margin for better spacing */
-    text-align: center;
-    line-height: 1.2; /* Adjust line height for readability */
-    font-weight: 500;
+
+@media only screen and (max-width: 991px) {
+  .jumbotron1 > h1 {
+    font-size: 64px !important;
+    line-height: 64px;
   }
 }
 
-@media only screen and (max-width: 435px) {
-  .jumbotron1 {
-    height: 800px; /* Ensures height is adaptive */
-    padding: 18px; /* Consistent padding */
-  }
-  .jumbotron1 > .animationText {
-    font-size: 17px; /* Further reduce font size for very small screens */
-    line-height: 1.2; /* Maintain line height for readability */
+@media only screen and (max-width: 766px) {
+  .jumbotron1 > h1 {
+    font-size: 43px !important;
+    line-height: 43px;
+    font-weight: 700 !important;
   }
 }
+
+

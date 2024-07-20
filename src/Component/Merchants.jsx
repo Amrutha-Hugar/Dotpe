@@ -51,9 +51,42 @@ export default function Merchants() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+
+
+  const elementRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+          } else {
+            setIsVisible(false);
+          }
+        });
+      },
+      {
+        threshold: 0.1, // Adjust this threshold as needed
+      }
+    );
+
+    if (elementRef.current) {
+      observer.observe(elementRef.current);
+    }
+
+    return () => {
+      if (elementRef.current) {
+        observer.unobserve(elementRef.current);
+      }
+    };
+  }, []);
+
+
   return (
     <div className="Merchants-container">
-      <h1 className="title">Moments with our Merchants</h1>
+      <h1 className="title" style={{fontSize:'60px'}}>Moments with our Merchants</h1>
       <br />
       <Slider
         ref={(slider) => {
@@ -63,7 +96,8 @@ export default function Merchants() {
       >
         <div className="merchent-slider-Item-outer">
           <div className="merchent-slider-Item">
-            <div className="merchent-card-text">
+            <div ref={elementRef}
+            className={`merchent-card-text ${isVisible ? 'slide-in-left' : ''}`}>
               <div className="merchent-name"><h1>Karthik<br/> Ranganathan</h1></div>
               <div className="merchent-designation">
                 <h3>Assistant VP, eCommerce, The<br/> ThickShake Factory</h3>
@@ -75,7 +109,8 @@ export default function Merchants() {
                 brownie points<br/> in choosing DotPe POS.”</p>
               </div>
             </div>
-            <div className="merchent-card-img">
+            <div ref={elementRef}
+      className={`merchent-card-img ${isVisible ? 'slide-in-up' : ''}`}>
               <img
                 src="https://cdn.dotpe.in/dotpe-website-live/images/thick-shake-founder-image-160622.png"
                 alt="merchent"
@@ -85,7 +120,8 @@ export default function Merchants() {
         </div>
         <div className="merchent-slider-Item-outer">
           <div className="merchent-slider-Item">
-            <div className="merchent-card-text">
+            <div ref={elementRef}
+            className={`merchent-card-text ${isVisible ? 'slide-in-left' : ''}`}>
               <div className="merchent-name"><h1>Aparna Andrews</h1></div>
               <div className="merchent-designation">
               <h3>Co-Founder, Biryani Blues</h3>
@@ -97,7 +133,8 @@ export default function Merchants() {
                     product.”</p>
               </div>
             </div>
-            <div className="merchent-card-img">
+            <div ref={elementRef}
+      className={`merchent-card-img ${isVisible ? 'slide-in-up' : ''}`}>
               <img
                 src="https://cdn.dotpe.in/dotpe-website-live/images/biryani-blues-founder-image-160622.png"
                 alt="merchent"
@@ -107,7 +144,8 @@ export default function Merchants() {
         </div>
         <div className="merchent-slider-Item-outer">
           <div className="merchent-slider-Item">
-            <div className="merchent-card-text">
+            <div ref={elementRef}
+            className={`merchent-card-text ${isVisible ? 'slide-in-left' : ''}`}>
               <div className="merchent-name"><h1>Rajat Jaiswal</h1></div>
               <div className="merchent-designation">
              <h3> Co-founder, Wat-a-Burger</h3>
@@ -120,7 +158,8 @@ export default function Merchants() {
                     with DotPe as<br/> our partner.”</p>
               </div>
             </div>
-            <div className="merchent-card-img">
+            <div ref={elementRef}
+      className={`merchent-card-img ${isVisible ? 'slide-in-up' : ''}`}>
               <img
                 src="https://cdn.dotpe.in/dotpe-website-live/images/wat-a-burger-founder-image-160622.png"
                 alt="merchent"
