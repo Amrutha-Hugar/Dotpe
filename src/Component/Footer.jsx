@@ -6,17 +6,42 @@ import image13 from "../Assets/Images/instagram.jpg";
 import image14 from "../Assets/Images/linked.jpg";
 
 import { useState, useEffect } from "react";
+import Mobilefooter from "./Mobilefooter";
 
 
 
 const Footer = () => {
 
+  const [windowDimensions, setWindowDimensions] = useState(
+    getWindowDimensions()
+  );
+
+  function getWindowDimensions() {
+    const { innerWidth: width, innerHeight: height } = window;
+    return {
+      width,
+      height,
+    };
+  }
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  console.log(windowDimensions, "windowDimensions");
 
   
   
   return (
     <div>
-      
+        {windowDimensions.width < 766 ? (
+        <Mobilefooter/>
+      ) : (
       <div className="footer bg-black w-100" style={{ height: "500px" }}>
         <div className="foot-container ">
           <div
@@ -105,7 +130,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-   
+      )}
     </div>
   );
 };

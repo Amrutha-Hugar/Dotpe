@@ -40,7 +40,7 @@ const DynamicHeader = () => {
             </div>
             <div className="drop">
               <div className="dropdown">
-                <button className="dropbtn  text-black" style={{fontWeight:'500'}}>Business Types</button>
+                <button className="dropbtn  text-black" style={{fontWeight:'600'}}>Business Types</button>
                 <div className="dropdown-content ">
                   <a class="dropdown-item " href="#">
                     <div className="d-flex ">
@@ -113,7 +113,7 @@ const DynamicHeader = () => {
               </div>
               <div>
                 <div className="dropdown">
-                  <button className="dropbtn  text-black" style={{fontWeight:'500'}}>Company</button>
+                  <button className="dropbtn  text-black" style={{fontWeight:'600'}}>Company</button>
                   <div className="dropdown-content " style={{ height: "50px" }}>
                     <a class="dropdown-item" href="#">
                       <div className="d-flex">
@@ -133,14 +133,14 @@ const DynamicHeader = () => {
               </div>
             </div>
 
-            <div style={{ fontSize: "16px" }}>
+            <div style={{ fontSize: "20px" }}>
               <button
                 style={{
-                  border: "1px solid #0F73FF",
+                  border: "2px solid #0F73FF",
                   color: "#0F73FF",
-                  padding: "8px 16px",
+                  padding: "9px 16px",
                   background: "white",
-                  fontWeight: 600,
+                  fontWeight: 700,
                 }}
                 className="rounded-5 h-100"
               >

@@ -46,12 +46,12 @@ const Mobilefood = () => {
                 <Collapse in={food}>
                   <div id="example-collapse-text" className=" ">
                     <a class="dropdown-item" href="#">
-                      <p className="text-start  " style={{ paddingLeft: "18px", color:'#ffffff', opacity:'0.5'}}>
+                      <p className="text-start  " style={{ paddingLeft: "15px", color:'#ffffff', opacity:'0.5', marginLeft:'10px'}}>
                         {" "}
                         Tools for front of house, back of house, and
                         <br /> everything in between.
                       </p>
-                      <button className="mm1 " style={{marginRight:'170px'}}>Know More</button>
+                      <button className="mm1 " style={{marginLeft:'-250px'}}>Know More</button>
                       <div style={{width:'300px' }}>
                         <img
                           src="https://cdn.dotpe.in/dotpe-website-live/images/latest-fnb-image-1-240622.jpg"
@@ -92,7 +92,7 @@ const Mobilefood = () => {
                   <p className="fw-bold m-2 text-white" style={{ fontSize: "15px",paddingLeft: "18px", color:'#ffffff', opacity:'0.5' }}>
                   Everything you need to build and run your<br /> e-commerce website with tools like inventory<br/> management, marketing and more.  
                         </p>
-                        <button className="mm1 m-4 ">Know More</button>
+                        <button className="mm1 m-4"  style={{marginLeft:'-250px'}}>Know More</button>
                     <div style={{width:"300px"}} className="m-4">
                       <img
                         src="https://cdn.dotpe.in/dotpe-website-live/images/latest-retail-image-1-240622.jpg"
@@ -133,7 +133,7 @@ const Mobilefood = () => {
                   <p className="fw-bold m-2 text-white" style={{ fontSize: "15px",paddingLeft: "18px", color:'#ffffff', opacity:'0.5' }}>
                   All the tools you need to deliver the best<br /> customer service with features like ePOS and<br /> CRM. Flexible for any use case.  
                         </p>
-                        <button className="mm1 m-4 p-2 ">Know More</button>
+                        <button className="mm1 m-4 p-2" style={{marginLeft:'20px'}}>Know More</button>
                     <div className="m-4" style={{ width:"300px"}}>
                       <img
                         src="https://cdn.dotpe.in/dotpe-website-live/images/home/services-img-1.jpg"

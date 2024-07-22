@@ -68,7 +68,7 @@ const Empowerbusinessslide = () => {
     
       <div className="mt-5">
         <div className="empower2 m-5">
-          <h1 className="empower fw-bold  fade-in-text1" style={{fontSize:'70px', marginTop:'220px',position:'relative'}}>
+          <h1 className="empower fw-bold  fade-in-text1" style={{fontSize:'65px', marginTop:'220px',position:'relative', }}>
             Empowering lacs of businesses, <br />
             Enabling millions of transactions
           </h1>
@@ -77,7 +77,7 @@ const Empowerbusinessslide = () => {
         <div className="slider-container d-flex justify-content-center">
           <Slider {...settings} style={{ width: "80%" }}>
             {images.map((image, index) => (
-              <div key={index}>
+              <div key={index} className="zoomIn">
                 <img src={image} alt="" className="slider-image" />
               </div>
             ))}

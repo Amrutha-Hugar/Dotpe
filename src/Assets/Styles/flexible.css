@@ -1,7 +1,8 @@
 .jumbotron1 {
   height: 300px;
-  position: relative;
-  margin-top: 170px;
+  position: relative; 
+   margin-top: 150px;
+  
 }
 
 .fade-in-text {
@@ -27,38 +28,25 @@
   }
 }
 
-/* @media (min-width: 320px) and (max-width: 767px) {
-  .jumbotron1 {
-    height: 150px;
-  }
-  .jumbotron1 > .animationText {
-    font-size: 34px;
-    width: 98%;
-    margin: 0 auto 3rem;
-    text-align: center;
-    line-height: 34px;
-    font-weight: 700;
+@media only screen and (max-width: 991px) {
+  .jumbotron1  {
+ 
+   margin-top: -25px;
   }
 }
-
-@media only screen and (max-width: 435px) {
-  .jumbotron1 {
-    height: 250px;
-  }
-} */
-
 
 
 @media only screen and (max-width: 991px) {
   .jumbotron1 > h1 {
-    font-size: 64px !important;
+    font-size: 50px !important;
     line-height: 64px;
+   
   }
 }
 
 @media only screen and (max-width: 766px) {
   .jumbotron1 > h1 {
-    font-size: 43px !important;
+    font-size:35px !important;
     line-height: 43px;
     font-weight: 700 !important;
   }

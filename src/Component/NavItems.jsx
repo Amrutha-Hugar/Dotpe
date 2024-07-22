@@ -11,7 +11,7 @@ export default function NavItems() {
           className="dropbtn  text-white"
           style={{
             fontWeight: 600,
-            fontSize: "27px",
+            fontSize: "23px",
           }}
         >
           Business Types
@@ -141,7 +141,7 @@ export default function NavItems() {
           className="dropbtn  text-white"
           style={{
             fontWeight: 500,
-            fontSize: "27px",
+            fontSize: "23px",
           }}
         >
           Company

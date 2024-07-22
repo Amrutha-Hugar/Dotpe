@@ -45,8 +45,8 @@ const Buildgrowbusiness = () => {
         >
           <form
             action=""
-            className="border p-3 d-flex rounded-5"
-            style={{ width: "100%", maxWidth: "700px" }}
+            className="border p-3 d-flex rounded-5 fade-in-text-4"
+            style={{ width: "100%", maxWidth: "700px",position:'relative' }}
           >
             <input
               type="text"
@@ -54,7 +54,7 @@ const Buildgrowbusiness = () => {
               className="form-control m-2"
               style={{fontSize:'20px'}}
             />
-            <button className="btn btn-primary m-2 w-50 " style={{fontSize:'20px', borderRadius:'30px', height:'50px'}}>Request Callback</button>
+            <button className="btn btn-primary m-2 w-50 fade-in-text-4" style={{fontSize:'20px', borderRadius:'30px', height:'50px',position:'relative'}}>Request Callback</button>
           </form>
         </div>
       </div>

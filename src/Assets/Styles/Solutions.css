@@ -17,7 +17,7 @@
 .animated-text1 {
     opacity: 0;
     transform: translateY(-100%);
-    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
   }
   
   .animated-text1.visible {
@@ -26,11 +26,25 @@
   }
   
 
+  .card-title {
+    font-size: 35px;
+  }
+  
+  .card-text {
+    font-size: 20px;
+  }
+  
+  .know {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+
 
   .card-text {
     opacity: 0;
     transform: translateY(100%);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    transition: opacity 0.1s ease-out,  0.1s ease-out;
   }
   
   .animate-text2 {
@@ -39,12 +53,42 @@
   }
  
 
-  @media (max-width: 412px) and (max-height: 915px) {
-    .card{
-      
-      width: 90%;
-      align-items: center;
-      margin-left: 20px;
-    }
+
+@media (max-width: 419px) and (max-height: 915px) {
+.card{
+  margin: 30px;
+ 
+ 
+}
+  .card-title {
+    font-size: 20px; 
+    margin-left: 10px;
   }
 
+  .card-text {
+    font-size: 10px; 
+  }
+
+  .know {
+    font-size: 10px; 
+    margin-top: -10px;
+    margin-left: -40px;
+    text-decoration: none;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-left-1 {
+  opacity: 0;
+  animation: slideInLeft 1s forwards;
+}

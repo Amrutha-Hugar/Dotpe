@@ -112,15 +112,15 @@ const TextImageSwitcher = () => {
                   onMouseLeave={handleMouseLeave}
                 >
                   <div className={`food-and-beverage ${isVisible ? 'slide-in-left' : ''}`} style={{marginLeft:'5%'}}>
-                  <h1 className="m-2 p-2" style={{ opacity: "1" }}>
+                  <h2 className="m-2 p-2" style={{ opacity: "1.5", fontSize:'40px', fontWeight:'750' }}>
                     Food & Beverage
-                  </h1>
-                  <p className="tool sm-2 p-2" style={{ fontSize:'22px',fontFamily:'sans-serif'}}>
+                  </h2>
+                  <p className="tool sm-2 p-2" style={{ fontSize:'22px',fontFamily:'sans-serif', fontWeight:'500', opacity:'2'}}>
                     Tools that connect the front of house with the back of house
                     and integrate everything that you need to run your
                     restaurant into one dashboard.
                   </p>
-                  <button className="know-btn m-2 p-2">Know More</button>
+                  <button className="know-btn m-2 p-2" style={{fontSize:'25px'}}>Know More</button>
                   </div>
                 </div>
                 <div
@@ -138,10 +138,10 @@ const TextImageSwitcher = () => {
                   onMouseLeave={handleMouseLeave}
                 >
                <div  className={`Retail ${isVisible ? 'slide-in-left' : ''}`} style={{marginLeft:'5%'}}>
-               <h1 className="m-2 p-2" >
+               <h2 className="m-2 p-2" style={{opacity: "1.5", fontSize:'40px', fontWeight:'750'}} >
                     Retail
-                  </h1>
-                  <p className="tool1 m-2 p-2" style={{ fontSize:'22px',fontFamily:'sans-serif'}}>
+                  </h2>
+                  <p className="tool1 m-2 p-2" style={{ fontSize:'22px',fontFamily:'sans-serif', fontWeight:'500'}}>
                     Everything you need to build and run your e-commerce website
                     <br /> with tools like inventory management, marketing and
                     more.
@@ -164,15 +164,15 @@ const TextImageSwitcher = () => {
                   onMouseLeave={handleMouseLeave}
                 >
                  <div  className={`Services-and-Others ${isVisible ? 'slide-in-left' : ''}`}style={{marginLeft:'5%'}}>
-                 <h1 className="m-2 p-2" >
+                 <h2 className="m-2 p-2" style={{ opacity:"1.5", fontSize:'40px', fontWeight:'750'}}>
                     Services & Others
-                  </h1>
-                  <p className="tool2 m-2 p-2" style={{ fontSize:'22px', fontWeight:'300', fontFamily:'sans-serif'}} >
+                  </h2>
+                  <p className="tool2 m-2 p-2" style={{ fontSize:'22px', fontWeight:'500', fontFamily:'sans-serif',}} >
                     All the tools you need to deliver the best customer service
                     with <br />
                     features like ePOS and CRM. Flexible for any use case.
                   </p>
-                  <button className="know-btn m-2 p-2">Know More</button>
+                  <button className="know-btn m-2 p-2" style={{fontSize:'25px'}}>Know More</button>
                  </div>
                 </div>
               </div>
