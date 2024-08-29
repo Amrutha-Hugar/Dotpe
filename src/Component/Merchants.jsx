@@ -85,7 +85,8 @@ export default function Merchants() {
 
 
   return (
-    <div className="Merchants-container">
+  <div className="Merchants">
+      <div className="Merchants-container">
       <h1 className="title" style={{fontSize:'60px'}}>Moments with our Merchants</h1>
       <br />
       <Slider
@@ -122,7 +123,7 @@ export default function Merchants() {
           <div className="merchent-slider-Item">
             <div ref={elementRef}
             className={`merchent-card-text ${isVisible ? 'slide-in-left' : ''}`}>
-              <div className="merchent-name"><h1>Aparna Andrews</h1></div>
+              <div className="merchent-name"><h2>Aparna Andrews</h2></div>
               <div className="merchent-designation">
               <h3>Co-Founder, Biryani Blues</h3>
               </div>
@@ -146,14 +147,14 @@ export default function Merchants() {
           <div className="merchent-slider-Item">
             <div ref={elementRef}
             className={`merchent-card-text ${isVisible ? 'slide-in-left' : ''}`}>
-              <div className="merchent-name"><h1>Rajat Jaiswal</h1></div>
+              <div className="merchent-name"><h2>Rajat Jaiswal</h2></div>
               <div className="merchent-designation">
              <h3> Co-founder, Wat-a-Burger</h3>
               </div>
               <br/>
               <div className="merchent-quote">
-             <p> “With DotPe's QR solutions, we've been able to<br/> reduce our
-                    3rd party commission by a whopping<br/> 98%. Growing in this
+             <p> “With DotPe's QR solutions, we've been able to<br/>reduce our
+                    3rd party commission by a whopping<br/>98%. Growing in this
                     challenging fast food<br/> industry is not so difficult anymore,
                     with DotPe as<br/> our partner.”</p>
               </div>
@@ -178,5 +179,8 @@ export default function Merchants() {
         </button>
       </div>
     </div>
+  </div>
+
+
   );
 }

@@ -42,35 +42,30 @@ const Footer = () => {
         {windowDimensions.width < 766 ? (
         <Mobilefooter/>
       ) : (
-      <div className="footer bg-black w-100" style={{ height: "500px" }}>
+      <div className="footer bg-black w-100" style={{ height: "350px" }}>
         <div className="foot-container ">
           <div
             className="foot d-flex text-white justify-content-center "
-            style={{ gap: "180px", marginTop: "6px", marginRight:'150px' }}
+            style={{ gap: "100px", marginTop: "-20px", marginRight:'150px' }}
           >
             <div className="foot1 mt-5">
-              <h4 className="text-gray text-start">Business</h4>
-              <p className="text-start" style={{ fontSize: "20px" }}>
-                Food & Beverages
-              </p>
-              <p className="text-start" style={{ fontSize: "20px" }}>
-                Retail
-              </p>
-              <p className="text-start" style={{ fontSize: "20px" }}>
-                Services
-              </p>
+              <p className="" style={{color:'#909090',fontWeight:'500'}}>Business</p>
+              <ul>
+                <li>Food & Beverages</li>
+                <li>Retail</li>
+                <li>Services</li>
+              </ul>
             </div>
             <div className="foot2 mt-5">
-              <h4 className="text-start">Dotpe</h4>
-              <p className="text-start" style={{ fontSize: "20px" }}>
-                Home
-              </p>
-              <p className="text-start" style={{ fontSize: "20px" }}>
-                Press & Media
-              </p>
+              <p className="text-start" style={{color:'#909090',fontWeight:'500'}}>Dotpe</p>
+              <ul>
+                <li>Home</li>
+                <li>Press & Media</li>
+                
+              </ul>
             </div>
           </div>
-          <hr className="h" style={{ marginTop: "2px" }} />
+          <hr className="h" style={{ marginTop: "-10px" }} />
           <br />
           <br />
           <div className="pay d-flex justify-content-around">
@@ -78,17 +73,17 @@ const Footer = () => {
               <img
                 src="https://cdn.dotpe.in/dotpe-website-live/images/dotpe-white-logo-svg.svg"
                 alt=""
-                height={"50vh"}
+                height={"40%"}
                 width={"100"}
                 className="m-4 "
               />
               <p
                 style={{
-                  fontSize: "20px",
+                  fontSize: "18px",
                   color: "gray",
                   opacity: "1",
                   fontWeight: "300",
-                  marginTop: "-11px",
+                  marginTop: "-9px",
                 }}
               >
                 © DotPe, All rights reserved
@@ -96,15 +91,12 @@ const Footer = () => {
             </div>
 
             <div
-              className="m-4 d-flex"
-              style={{
-                marginLeft: "30px",
-                fontSize: "20px",
-                fontWeight: "bold",
-              }}
+              className="d-flex"
+             
             >
-              <p className="text-white m-4">Terms & Conditions</p>
-              <p className="text-white m-4">Privacy Policy</p>
+              <a href="" className="text-white m-4" style={{fontWeight:'500', textDecoration:'none'}}>Terms & Conditions</a>
+              <a href="" className="text-white m-4" style={{fontWeight:'500', textDecoration:'none'}}>Privacy Policy</a>
+              
               <img
                 src={image12}
                 className="m-3"

@@ -2,23 +2,23 @@
   opacity: 1;
 }
 
-.foot1 {
-  color: gray;
+
+.foot1 ul{
+ list-style: none;
 }
 
-.foot2 {
-  color: gray;
+.foot1 li{
+  text-align: start;
+  
 }
 
-.foot1 p {
-  color: white;
-  font-weight: bold;
-}
-
-.foot2 p {
-  color: white;
-  font-weight: bold;
-}
+.foot2 ul{
+  list-style: none;
+ }
+ 
+ .foot2 li{
+   text-align: start;
+ }
 
 
 .footer {

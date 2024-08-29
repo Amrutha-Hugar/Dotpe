@@ -27,11 +27,11 @@ const Buildgrowbusiness = () => {
       
       <div className="buildanimate m-5 w-80">
         <div>
-          <h1 className="build fw-bold text-center fade-in-text-2" style={{marginTop:'300px', fontSize:'70px',position:'relative'}}>
+          <h1 className="build fw-bold text-center fade-in-text-2" style={{marginTop:'300px', fontSize:'56px',position:'relative',lineHeight:'56px'}}>
             Build and grow your
             <br /> business with DotPe.
           </h1>
-          <p className="tools" style={{fontSize:'38px'}}>
+          <p className="tools" style={{fontSize:'28px',lineHeight:'38px'}}>
             Get all the tools you need to take your business to the next
             <br />
             level & join the millions of merchants using DotPe.
@@ -46,15 +46,15 @@ const Buildgrowbusiness = () => {
           <form
             action=""
             className="border p-3 d-flex rounded-5 fade-in-text-4"
-            style={{ width: "100%", maxWidth: "700px",position:'relative' }}
+            style={{ width: "100%", maxWidth: "500px",position:'relative',height:'90px' }}
           >
             <input
               type="text"
               placeholder="Enter your mobile number"
               className="form-control m-2"
-              style={{fontSize:'20px'}}
+              style={{fontSize:'1rem'}}
             />
-            <button className="btn btn-primary m-2 w-50 fade-in-text-4" style={{fontSize:'20px', borderRadius:'30px', height:'50px',position:'relative'}}>Request Callback</button>
+            <button className="btn btn-primary m-2 w-50 fade-in-text-4" style={{fontSize:'16px', borderRadius:'30px', height:'50px',position:'relative'}}>Request Callback</button>
           </form>
         </div>
       </div>

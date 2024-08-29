@@ -51,7 +51,6 @@ const TextImageSwitcher = () => {
 
   console.log(windowDimensions, "windowDimensions");
 
-
   const elementRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -112,19 +111,17 @@ const TextImageSwitcher = () => {
                   onMouseLeave={handleMouseLeave}
                 >
                   <div className={`food-and-beverage ${isVisible ? 'slide-in-left' : ''}`} style={{marginLeft:'5%'}}>
-                  <h2 className="m-2 p-2" style={{ opacity: "1.5", fontSize:'40px', fontWeight:'750' }}>
-                    Food & Beverage
+                  <h2 className="m-2 p-2" style={{  fontSize:'30px', fontWeight:'600', }}>
+                    Food & Beverage  <span><img src="https://cdn.dotpe.in/dotpe-website-live/images/right-arrow-grey-image-270522.svg" alt="" className="m-2" height={"20px"}/></span>
                   </h2>
-                  <p className="tool sm-2 p-2" style={{ fontSize:'22px',fontFamily:'sans-serif', fontWeight:'500', opacity:'2'}}>
-                    Tools that connect the front of house with the back of house
-                    and integrate everything that you need to run your
-                    restaurant into one dashboard.
+                  <p className="sm-2 p-2" style={{ fontSize:'16px', fontWeight:'300',lineHeight:'20px' }}>
+                    Tools that connect the front of house with the back  of house and integrate everything that you need  to run your restaurant into one dashboard.
                   </p>
-                  <button className="know-btn m-2 p-2" style={{fontSize:'25px'}}>Know More</button>
+                  <button className="know-btn m-2 p-2 rounded-1" style={{fontSize:'14px',color: '#ffffff'}}>Know More</button>
                   </div>
                 </div>
                 <div
-                  className="text-section text-light-gray text-start m-5"
+                  className="text-section text-start m-5"
                   onMouseEnter={() =>
                     handleMouseEnter({
                       image1:
@@ -138,19 +135,19 @@ const TextImageSwitcher = () => {
                   onMouseLeave={handleMouseLeave}
                 >
                <div  className={`Retail ${isVisible ? 'slide-in-left' : ''}`} style={{marginLeft:'5%'}}>
-               <h2 className="m-2 p-2" style={{opacity: "1.5", fontSize:'40px', fontWeight:'750'}} >
-                    Retail
+               <h2 className="m-2 p-2" style={{  fontSize:'30px', fontWeight:'600', }} >
+                    Retail <span><img src="https://cdn.dotpe.in/dotpe-website-live/images/right-arrow-grey-image-270522.svg" alt="" className="m-2" height={"20px"}/></span>
                   </h2>
-                  <p className="tool1 m-2 p-2" style={{ fontSize:'22px',fontFamily:'sans-serif', fontWeight:'500'}}>
-                    Everything you need to build and run your e-commerce website
-                    <br /> with tools like inventory management, marketing and
+                  <p className=" m-2 p-2"  style={{ fontSize:'16px', fontWeight:'300',lineHeight:'20px' }}>
+                    Everything you need to build and run your e-commerce  website
+                   with tools like inventory management, marketing and
                     more.
                   </p>
-                  <button className="know-btn m-2 p-2" style={{fontSize:'25px'}}>Know More</button>
+                  <button className="know-btn m-2 p-2 rounded-1" style={{fontSize:'14px',color: '#ffffff'}}>Know More</button>
                </div>
                 </div>
                 <div
-                  className="text-section text-gray text-start m-5"
+                  className="text-section  text-start m-5"
                   onMouseEnter={() =>
                     handleMouseEnter({
                       image1:
@@ -164,15 +161,14 @@ const TextImageSwitcher = () => {
                   onMouseLeave={handleMouseLeave}
                 >
                  <div  className={`Services-and-Others ${isVisible ? 'slide-in-left' : ''}`}style={{marginLeft:'5%'}}>
-                 <h2 className="m-2 p-2" style={{ opacity:"1.5", fontSize:'40px', fontWeight:'750'}}>
-                    Services & Others
+                 <h2 className="m-2 p-2"style={{  fontSize:'30px', fontWeight:'600', }}>
+                    Services & Others <span><img src="https://cdn.dotpe.in/dotpe-website-live/images/right-arrow-grey-image-270522.svg" alt="" className="m-2" height={"20px"}/></span>
                   </h2>
-                  <p className="tool2 m-2 p-2" style={{ fontSize:'22px', fontWeight:'500', fontFamily:'sans-serif',}} >
+                  <p className="m-2 p-2"  style={{ fontSize:'16px', fontWeight:'300',lineHeight:'20px' }} >
                     All the tools you need to deliver the best customer service
-                    with <br />
-                    features like ePOS and CRM. Flexible for any use case.
+                    with features like ePOS and CRM. Flexible for any use case.
                   </p>
-                  <button className="know-btn m-2 p-2" style={{fontSize:'25px'}}>Know More</button>
+                  <button className="know-btn m-2 p-2 rounded-1" style={{fontSize:'14px',color: '#ffffff'}}>Know More</button>
                  </div>
                 </div>
               </div>
@@ -181,7 +177,7 @@ const TextImageSwitcher = () => {
                   src={imageSrc.image1}
                   alt="Image"
                   className="image-top rounded-5"
-                  style={{marginRight:'-25%',
+                  style={{marginRight:'-30%',
                 }}
                   height={"500px"}
                   width={"1100px"}
@@ -194,7 +190,7 @@ const TextImageSwitcher = () => {
                     style={{marginLeft:'8%',
                     }}
                     height={"350px"}
-                    width={"400px"}
+                    width={"500px"}
                   />
 
                   <img

@@ -16,7 +16,7 @@
 .sell > h1{
     font-size: 56px;
     font-weight: bold;
-    width: 60%;
+    width: 80%;
     line-height: 1.2;
     padding-bottom: 100px;
     padding-left: 120px;
@@ -24,23 +24,6 @@
     margin-top: 100px;
 }
 
-
-
-
-
-.text-section:hover{
- color: white;   
-}
-
-.know-btn{
-    background-color: #262626;
-    color: #ffffff;
-    font-size: 25px;
-    border: none;
-    border-radius: 10px;
-    font-weight: 200;
-    /* width: 10%; */
-}
 
 
 .btn:not(:disabled):not(.disabled) {
@@ -55,7 +38,10 @@
 
 
 .text-section:hover{
- color: white;   
+ color: white; 
+}
+.text-section{
+ color: gray;
 }
 
 
@@ -89,5 +75,5 @@
   
   .slide-in-left {
     opacity: 0;
-    animation: slideInLeft 4s forwards;
+    animation: slideInLeft 2s forwards;
   }

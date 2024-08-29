@@ -20,6 +20,7 @@
     margin: 0 auto 6rem;
   }
   .merchent-slider-Item-outer {
+    margin-top: '-20px';
     display: flex !important;
     justify-content: center;
     align-items: center;
@@ -36,22 +37,23 @@
         max-width: 60%;
         text-align: left;
         .merchent-name {
-          font-size: 100px;
-          margin-bottom: 2rem;
-          font-weight: bold;
-          line-height: 3rem;
+          font-size: 48px;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    line-height: 48px;
         }
         .merchent-designation {
-          font-size: 40px;
-          font-weight: 700;
-          font-style: italic;
-          margin-bottom: 1rem;
+          font-size: 22px;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
         }
         .merchent-quote {
-          font-size: 1.400rem;
-          line-height: 2.8rem;
-          font-style: italic;
-          font-weight: 500;
+          font-size: 18px;
+    line-height: 24px;
+    font-style: italic;
+    font-weight: 500;
         }
 
         @media (min-width: 320px) and (max-width: 767px) {
@@ -178,7 +180,7 @@
       background-color: black;
     }
   }
-}
+
 
 
 @keyframes slideInLeft {

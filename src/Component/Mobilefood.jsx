@@ -41,7 +41,7 @@ const Mobilefood = () => {
                    }}
                 >
                   Food & Beverages{" "}
-                  <FontAwesomeIcon className="" icon={food ? faMinus : faPlus} />
+                  <FontAwesomeIcon className="" style={{marginRight:'20px'}} icon={food ? faMinus : faPlus} />
                 </Button>
                 <Collapse in={food}>
                   <div id="example-collapse-text" className=" ">
@@ -51,7 +51,7 @@ const Mobilefood = () => {
                         Tools for front of house, back of house, and
                         <br /> everything in between.
                       </p>
-                      <button className="mm1 " style={{marginLeft:'-250px'}}>Know More</button>
+                      <button className="mm1 " style={{marginLeft:'-210px'}}>Know More</button>
                       <div style={{width:'300px' }}>
                         <img
                           src="https://cdn.dotpe.in/dotpe-website-live/images/latest-fnb-image-1-240622.jpg"
@@ -68,8 +68,8 @@ const Mobilefood = () => {
                 </Collapse>
               </div>
             </div>
-
-            <div className="text-start  ">
+            
+            <div className="text-start" style={{marginTop:'-30px'}}>
               <Button
                 onClick={() => setretail(!retail)}
                 aria-controls="example-collapse-text"
@@ -83,7 +83,7 @@ const Mobilefood = () => {
               >
                 Retail
                 <span>
-                  <FontAwesomeIcon icon={retail ? faMinus : faPlus} />
+                  <FontAwesomeIcon style={{marginRight:'20px'}} icon={retail ? faMinus : faPlus} />
                 </span>
               </Button>
               <Collapse in={retail}>
@@ -109,8 +109,8 @@ const Mobilefood = () => {
               </Collapse>
             </div>
           
-          
-            <div className="text-start  ">
+         
+            <div className="text-start" style={{marginTop:'-30px'}}>
               <Button
                 onClick={() => setservice(!service)}
                 aria-controls="example-collapse-text"
@@ -124,7 +124,7 @@ const Mobilefood = () => {
               >
                Services & Others
                 <span>
-                  <FontAwesomeIcon icon={service ? faMinus : faPlus} />
+                  <FontAwesomeIcon style={{marginRight:'20px'}} icon={service ? faMinus : faPlus} />
                 </span>
               </Button>
               <Collapse in={service}>

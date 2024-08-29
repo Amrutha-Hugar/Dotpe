@@ -21,22 +21,9 @@
   text-decoration: none;
 }
 
-.col-sm-4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
 
-.food,
-.tools,
-.Know {
-  text-align: left;
-}
 
-.beverage2 {
-  color: darkgrey;
-}
+
 
 .scan img {
   border-radius: 30px;
@@ -54,15 +41,7 @@
 
 
 
-@media (max-width: 768px) {
-  .lacs {
-    font-size: 4rem; /* Adjust the size as needed */
-  }
-  .part > p {
-    font-size: 10px;
-    /* Adjust the size as needed */
-  }
-}
+
 
 .part {
   font-size: 70px;
@@ -91,10 +70,6 @@ img {
   font-size: 50px;
 }
 
-.tools {
-  font-size: 30px;
-  text-align: center;
-}
 
 .formclass input {
   border: none;

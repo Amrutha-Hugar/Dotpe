@@ -42,20 +42,20 @@ export default function Solutions() {
   return (
 <div>
   <div className="mt-5">
-    <div className="container5 mt-5">
+   
       <div className="row justify-content-center " style={{ gap: '60px' }}>
         <div className="col-md-5 col-lg-4 mb-5">
           <div className="card rounded-5">
             <div className="card-body d-flex flex-column text-start m-4">
-              <h2 ref={textRef} className={`card-title fw-bold text-black m-2 animated-text1 ${isVisible ? 'visible' : ''}`}>
+              <h2 ref={textRef} className={`card-title fw-bold text-black m-2 animated-text1 ${isVisible ? 'visible' : ''}`} >
                 POS
               </h2>
-              <p className={`card-text text-black p-3 ${isVisible ? 'animate-text2' : ''}`} style={{fontSize:'20px', fontWeight:'550', fontFamily:'unset', }}>
+              <p className={`card-text text-black p-3 ${isVisible ? 'animate-text2' : ''}`} style={{fontSize:'16px', fontWeight:'600', fontFamily:'unset', lineHeight:'24px' }}>
                 Sync your in-store and online business with the{" "}
                 <span className="cardtext1">industry's leading Point of Sale.</span>
               </p>
               <div className="mt-auto ">
-                <a href="" className="know btn btn-link 'slide-in-left-1'" >
+                <a href="" className="know btn btn-link 'slide-in-left-1'" style={{fontSize:'18px',fontWeight:'600', color:'#006AFF'}} >
                   Know More
                   <img className="m-2" src="https://cdn.dotpe.in/dotpe-website-live/images/right-arrow-1.png" alt="" />
                 </a>
@@ -71,11 +71,11 @@ export default function Solutions() {
               <h4 ref={textRef} className={`card-title fw-bold text-black m-2 animated-text1 ${isVisible ? 'visible' : ''}`}>
                 Online Store
               </h4>
-              <p className={`card-text text-black p-3 ${isVisible ? 'animate-text2' : ''}`} style={{fontSize:'20px', fontWeight:'550', fontFamily:'unset', }}>
+              <p className={`card-text text-black p-3 ${isVisible ? 'animate-text2' : ''}`} style={{fontSize:'16px', fontWeight:'600', fontFamily:'unset', lineHeight:'24px' }}>
                 Go digital in minutes with your own e-commerce <br />website.
               </p>
               <div className="mt-auto ">
-                <a href="" className="know btn btn-link 'side-in-left-1'">
+                <a href="" className="know btn btn-link 'side-in-left-1'" style={{fontSize:'18px',fontWeight:'600', color:'#006AFF'}}>
                   Know More
                   <img className="m-2" src="https://cdn.dotpe.in/dotpe-website-live/images/right-arrow-1.png" alt="" />
                 </a>
@@ -85,20 +85,20 @@ export default function Solutions() {
           </div>
         </div>
       </div>
-    </div>
+    
   </div>
 
   <div className="row justify-content-center mt-5 " style={{ gap: '90px' }}>
-    <div className="col-md-5 col-lg-4 mb-5">
+    <div className="col-md-5 col-lg-4 ">
       <div className="card rounded-5">
         <div className="card-body text-start m-3">
           <h4 ref={textRef} className={`card-title fw-bold text-black m-2 animated-text1 ${isVisible ? 'visible' : ''}`}>
             QR Solution
           </h4>
-          <p className={`card-text text-black p-3 ${isVisible ? 'animate-text2' : ''}`} style={{fontSize:'20px', fontWeight:'550', fontFamily:'unset', }}>
+          <p className={`card-text text-black p-3 ${isVisible ? 'animate-text2' : ''}`} style={{fontSize:'16px', fontWeight:'600', fontFamily:'unset', lineHeight:'24px' }}>
             Provide contactless ordering experience, accept payments &amp; more with your store's QR code.
           </p>
-          <a href="" className="know btn btn-link 'side-in-left-1'">
+          <a href="" className="know btn btn-link 'side-in-left-1'" style={{fontSize:'18px',fontWeight:'600', color:'#006AFF'}}>
             Know More
             <img className="m-2" src="https://cdn.dotpe.in/dotpe-website-live/images/right-arrow-1.png" alt="" />
           </a>
@@ -113,10 +113,10 @@ export default function Solutions() {
           <h4 ref={textRef} className={`card-title fw-bold text-black m-2 animated-text1 ${isVisible ? 'visible' : ''}`}>
             Market Integration
           </h4>
-          <p className={`card-text text-black p-3 ${isVisible ? 'animate-text2' : ''}`} style={{fontSize:'20px', fontWeight:'550', fontFamily:'unset', }}>
-            Create a centralised command for your business with our best-in class marketplace integrations.
+          <p className={`card-text text-black p-3 ${isVisible ? 'animate-text2' : ''}`} style={{fontSize:'16px', fontWeight:'600', fontFamily:'unset', lineHeight:'24px' }}>
+            Create a centralised command for your business with<br/> our best-in class marketplace integrations.
           </p>
-          <a href="" className="know btn btn-link 'side-in-left-1'">
+          <a href="" className="know btn btn-link 'side-in-left-1'" style={{fontSize:'18px',fontWeight:'600', color:'#006AFF'}}>
             Know More
             <img className="m-2" src="https://cdn.dotpe.in/dotpe-website-live/images/right-arrow-1.png" alt="" />
           </a>
@@ -133,11 +133,11 @@ export default function Solutions() {
           <h4 ref={textRef} className={`card-title fw-bold text-black m-2 animated-text1 ${isVisible ? 'visible' : ''}`}>
             Payments
           </h4>
-          <p className={`card-text text-black p-3 ${isVisible ? 'animate-text2' : ''}`} style={{fontSize:'20px', fontWeight:'550', fontFamily:'unset', }}>
+          <p className={`card-text text-black p-3 ${isVisible ? 'animate-text2' : ''}`} style={{fontSize:'16px', fontWeight:'600', fontFamily:'unset', lineHeight:'24px' }}>
             Accept payments quickly, easily & securely. Let shoppers pay their way with multiple payment options.
           </p>
          
-          <a href="" className="know btn btn-link 'side-in-left-1'">
+          <a href="" className="know btn btn-link 'side-in-left-1'" style={{fontSize:'18px',fontWeight:'600', color:'#006AFF'}}>
             Know More
             <img className="m-2" src="https://cdn.dotpe.in/dotpe-website-live/images/right-arrow-1.png" alt="" />
           </a>
@@ -152,11 +152,11 @@ export default function Solutions() {
           <h4 ref={textRef} className={`card-title fw-bold text-black m-2 animated-text1 ${isVisible ? 'visible' : ''}`}>
             Delivery
           </h4>
-          <p className={`card-text text-black p-3 ${isVisible ? 'animate-text2' : ''}`} style={{fontSize:'20px', fontWeight:'550', fontFamily:'unset', }}>
+          <p className={`card-text text-black p-3 ${isVisible ? 'animate-text2' : ''}`} style={{fontSize:'16px', fontWeight:'600', fontFamily:'unset', lineHeight:'24px' }}>
             Smartly manage all your deliveries with our seamless 3rd party integrations & Swiftly Delivered, Right on Time.
           </p>
     
-          <a href="" className="know btn btn-link 'side-in-left-1'">
+          <a href="" className="btn btn-link 'side-in-left-1'" style={{fontSize:'18px',fontWeight:'600', color:'#006AFF', textDecoration:'none'}}>
             Know More
             <img className="m-2" src="https://cdn.dotpe.in/dotpe-website-live/images/right-arrow-1.png" alt="" />
           </a>

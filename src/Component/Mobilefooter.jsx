@@ -25,11 +25,11 @@ const Mobilefooter = () => {
         style={{ height: "400px", width: "100%" }}
       >
         <div className="">
-          <div>
+          <div className="">
             <div className="dropdown">
               <button
                 className="btn text-#757575  dropdown-toggle"
-                style={{ marginTop: "80px", border: "none",fontSize:'20px', fontWeight:'500', color:'gray' }}
+                style={{ marginTop: "40px", border: "none",fontSize:'20px', fontWeight:'500', color:'gray' }}
                 type="button"
                 id="dropdownMenuButton"
                 data-bs-toggle="dropdown"
@@ -58,10 +58,10 @@ const Mobilefooter = () => {
                 </li>
               </ul>
             </div>
-            <div className="dropdown">
+            <div className="dropdown" >
               <button
                 className="btn   dropdown-toggle"
-                style={{ marginTop: "10px", border: "none", fontSize:'20px', fontWeight:'500', color:'gray' }}
+                style={{ marginTop: "-20px", border: "none", fontSize:'20px', fontWeight:'500', color:'gray' }}
                 type="button"
                 id="dropdownMenuButton"
                 data-bs-toggle="dropdown"
@@ -95,7 +95,7 @@ const Mobilefooter = () => {
       </div>
       <hr  style={{opacity:'1.5'}}/>
         </div>
-       <div className="d-flex justify-content-around" style={{fontWeight:'500', color:'gray'}}>
+       <div className="d-flex justify-content-around" style={{fontWeight:'500', color:'gray', marginTop:'-15px'}}>
         <p className="">Terms & Conditions</p>
         <p>Privacy Policy</p>
        </div>
