@@ -31,7 +31,7 @@ const Imageformate = () => {
                   className="work-all-section-txt"
                   style={{
                     height: '30%',
-                    fontSize: '35px',
+                    fontSize: '30px',
                     position: "fixed",
                     top: "60%",
                     left: "20%",
@@ -43,7 +43,7 @@ const Imageformate = () => {
                     fontWeight: 'bold',
                   }}
                 >
-                  <p>DotPe works for all <br />types, sizes & formats of businesses.</p>
+                  <p>DotPe works for all types, sizes & formats of businesses.</p>
                 </div>
               </TransformComponent>
             </div>

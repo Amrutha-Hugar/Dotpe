@@ -1,0 +1,55 @@
+.serving-content{
+   margin-top: 180px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .serving-content>h1{
+        font-size: 34px;
+        line-height: 36px;
+        margin-top: -80px;
+    }
+}
+
+@media (min-width: 414px) and (max-width: 896px) {
+    .serving-content>h1{
+        font-size: 34px;
+        line-height: 36px;
+        margin-top: -80px;
+    }
+}
+
+.quicksservice{
+    background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, brown ,brown,brown, white,white);
+  border-radius: 40px;
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+}
+
+.quicksservice h4{
+    color: #ffffff;
+    font-size: 34px;
+    font-weight: 600;
+    margin: 4rem 0 3rem;
+    
+}
+
+.quicksservice p{
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: normal;
+    margin-bottom: 3rem;
+    width: 40%;
+    
+}
+
+.quicksservice .list-item{
+    position: relative;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: normal;
+    margin-bottom: 3rem;
+    padding-left: 4rem;
+}

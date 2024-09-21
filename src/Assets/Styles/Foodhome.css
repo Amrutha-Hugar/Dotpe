@@ -1,0 +1,128 @@
+.fullfood{
+    color: white;
+    text-align: center;
+    font-size: 78px;
+    font-weight: 700;
+}
+
+@media (min-width: 419px) and (max-width: 616px) {
+    .fullfood {
+        font-size: 34px;
+        text-align: center;
+       margin-top: -50px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 720px) {
+    .fullfood {
+        font-size: 40px;
+        text-align: center;
+        margin-top: -50px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 667px) {
+    .fullfood {
+        font-size: 65px;
+        text-align: center;
+        font-weight: 500;
+    }
+}
+
+.foodhome-content{
+    margin-top: 80px;
+}
+
+.foodhome-content p{
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+@media (max-width: 480px) {
+    .foodhome-content p {
+        font-size: 17.43px;
+    }
+}
+@media (max-width: 480px) {
+    .foodhome-content p {
+        font-size: 16px;
+    }
+}
+@media (max-width: 576px) {
+    .foodhome-content p{
+        font-size: 18px;
+    }
+}
+@media (max-width: 991px) {
+    .foodhome-content p{
+        font-size: 18px;
+    }
+}
+@media (max-width: 991px) {
+    .foodhome-content p{
+        font-size: 19px;
+        margin-bottom: 35px;
+    }
+}
+@media (max-width: 1199px) {
+    .foodhome-content p {
+        font-size: 20px;
+    }
+}
+@media (max-width: 1199px) {
+    .foodhome-content p {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+    .foodhome-content p {
+        font-size: 16px !important;
+        text-align: center;
+        font-weight: 500 !important;
+        margin-bottom: 2rem;
+    }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+    .foodhome-content p {
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+.Started-btn {
+    align-items: center;
+    background-color: #006aff;
+    border: none;
+    border-radius: 43px;
+    color: #fff;
+    display: flex;
+    font-size: 18px;
+    height: 55px;
+    justify-content: center;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    padding: 0 24px;
+    font-weight: 600;
+    width: 170px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+  }
+  
+  .Started-btn:hover{
+    background-color:#006aff;
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    .Started-btn{
+        font-size: 16px;
+        height: 50px;
+        width: 150px;
+        margin-top: -30px;
+    }
+}
+
+  .img-fluid{
+    width: 75%;
+  }

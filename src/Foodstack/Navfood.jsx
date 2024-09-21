@@ -1,11 +1,10 @@
 import React from "react";
-import "../Assets/Styles/Businesstype.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import "../Assets/Styles/Navfood.css";
 
-
-export default function NavItems() {
+const Navfood = () => {
   return (
     <div className="drop">
       <div className="dropdown">
@@ -16,31 +15,84 @@ export default function NavItems() {
             fontSize: "18px",
           }}
         >
-          Business Types 
+          Products
+        </button>
+        <div className="dropdown-content">
+          <a className="dropdown-item" href="#">
+            <div
+              className=" dropdown-item-title"
+              style={{ textAlign: "left", margin: "10px", padding: "5px" }}
+            >
+              <div className="product-name">
+                <div>
+                  <span className="">Online Store</span>
+                </div>
+                <hr />
+                <div>
+                  <span>Point of Sale(POS)</span>
+                  <br />
+                  <p>Website in devlopment</p>
+                </div>
+                <hr />
+                <div>
+                  <span>Maketing</span>
+                  <br />
+                  <p>Website in devlopment</p>
+                </div>
+                <hr />
+                <div>
+                  <span>Deliveries & Logistics</span>
+                  <br />
+                  <p>Website in devlopment</p>
+                </div>
+                <hr />
+                <div>
+                  <span>Payments</span>
+                  <br />
+                  <p>Website in devlopment</p>
+                </div>
+                <hr />
+                <div>
+                  <span>In-Store Solution</span>
+                  <br />
+                  <p>Website in devlopment</p>
+                </div>
+                <hr />
+                <div>
+                  <span>Whatsapp for Business</span>
+                  <br />
+                  <p>Website in devlopment</p>
+                </div>
+              </div>
+              <div></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div className="dropdown">
+        <button
+          className="dropbtn  text-white"
+          style={{
+            fontWeight: 500,
+            fontSize: "18px",
+          }}
+        >
+          Business Types
         </button>
         <div className="dropdown-content">
           <a class="dropdown-item" href="#">
             <div className="d-flex align-items-baseline dropdown-item-title">
-              <img
-                src="https://cdn.dotpe.in/dotpe-website-live/images/food-beverage-icon.png"
-                alt="Image 1"
-                width="16"
-                style={{
-                  marginRight: "15px",
-                }}
-              />
-
               <div>
                 <div className="d-flex align-items-center">
                   <div
                     className=""
                     style={{
                       marginRight: "10px",
-                      fontSize:'16px',
-                      fontWeight:'600'
+                      fontSize: "16px",
+                      fontWeight: "600",
                     }}
                   >
-                  <Link to="/foodstack">Food & Beverage Industry</Link>{" "}
+                    <Link to="/foodstack">Food & Beverage Industry</Link>{" "}
                   </div>
                   <FontAwesomeIcon
                     icon={faArrowRight}
@@ -51,35 +103,34 @@ export default function NavItems() {
                     }}
                   />
                 </div>
-                <p className="text-start dropdown-item-info m-2" style={{fontFamily:'serif', lineHeight:'16px', fontSize:'11px', color:'#717171', fontWeight:'500'}}>
+                <p
+                  className="text-start dropdown-item-info m-2"
+                  style={{
+                    fontFamily: "serif",
+                    lineHeight: "16px",
+                    fontSize: "11px",
+                    color: "#717171",
+                    fontWeight: "500",
+                  }}
+                >
                   {" "}
-                  Tools for front of house, back of house, and<br/> 
+                  Tools for front of house, back of house, and
+                  <br />
                   everything in between.
                 </p>
               </div>
             </div>
-           
           </a>
           <a class="dropdown-item" href="#">
             <div className="d-flex align-items-baseline dropdown-item-title">
-              <img
-                src="https://cdn.dotpe.in/dotpe-website-live/images/food-beverage-icon.png"
-                alt="Image 1"
-                width="16"
-                style={{
-                  marginRight: "15px",
-                }}
-              />
-
               <div>
                 <div className="d-flex align-items-center">
                   <div
                     className=""
                     style={{
-                      
                       marginRight: "10px",
-                      fontSize:'16px',
-                      fontWeight:'600'
+                      fontSize: "16px",
+                      fontWeight: "600",
                     }}
                   >
                     <span>Retail</span>{" "}
@@ -89,38 +140,38 @@ export default function NavItems() {
                     size="1x"
                     className=" animated-navArrow  p-1"
                     style={{
-                     marginTop:'6px'
+                      marginTop: "6px",
                     }}
                   />
                 </div>
-                <p className="text-start dropdown-item-info" style={{fontFamily:'serif', lineHeight:'16px', fontSize:'11px', color:'#717171', fontWeight:'500'}}>
+                <p
+                  className="text-start dropdown-item-info"
+                  style={{
+                    fontFamily: "serif",
+                    lineHeight: "16px",
+                    fontSize: "11px",
+                    color: "#717171",
+                    fontWeight: "500",
+                  }}
+                >
                   {" "}
-                  All the retail tools you need from offline to<br/>
+                  All the retail tools you need from offline to
+                  <br />
                   online, in-store &amp; online.
                 </p>
               </div>
             </div>
-           
           </a>
           <a class="dropdown-item" href="#">
             <div className="d-flex align-items-baseline dropdown-item-title">
-              <img
-                src="https://cdn.dotpe.in/dotpe-website-live/images/food-beverage-icon.png"
-                alt="Image 1"
-                width="16"
-                style={{
-                  marginRight: "15px",
-                }}
-              />
-
               <div>
                 <div className="d-flex align-items-center">
                   <div
                     className=""
                     style={{
                       marginRight: "10px",
-                       fontSize:'16px',
-                      fontWeight:'600'
+                      fontSize: "16px",
+                      fontWeight: "600",
                     }}
                   >
                     <span> Services & Others </span>{" "}
@@ -134,9 +185,19 @@ export default function NavItems() {
                     }}
                   />
                 </div>
-                <p className="text-start dropdown-item-info"  style={{fontFamily:'serif', lineHeight:'16px', fontSize:'11px', color:'#717171', fontWeight:'500'}} >
+                <p
+                  className="text-start dropdown-item-info"
+                  style={{
+                    fontFamily: "serif",
+                    lineHeight: "16px",
+                    fontSize: "11px",
+                    color: "#717171",
+                    fontWeight: "500",
+                  }}
+                >
                   {" "}
-                  Solutions for health, repair &amp; other service<br/>
+                  Solutions for health, repair &amp; other service
+                  <br />
                   professionals.
                 </p>
               </div>
@@ -157,15 +218,6 @@ export default function NavItems() {
         <div className="dropdown-content">
           <a class="dropdown-item" href="#">
             <div className="d-flex align-items-baseline dropdown-item-title">
-              <img
-                src="https://cdn.dotpe.in/dotpe-website-live/images/press-media-icon.png"
-                alt="Image 1"
-                width="16"
-                style={{
-                  marginRight: "15px",
-                }}
-              />
-
               <div>
                 <div className="d-flex align-items-center">
                   <div
@@ -181,18 +233,17 @@ export default function NavItems() {
                     size="1x"
                     className="animated-navArrow"
                     style={{
-                     marginTop:'-3px'
+                      marginTop: "-3px",
                     }}
                   />
                 </div>
-               
               </div>
             </div>
           </a>
-          
-       
         </div>
       </div>
     </div>
   );
-}
+};
+
+export default Navfood;

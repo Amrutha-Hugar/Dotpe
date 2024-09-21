@@ -1,24 +1,109 @@
-import React from "react";
-import "../Assets/Styles/Businesstype.css";
+import React, { useEffect, useState } from "react";
+import image1 from "../Assets/Images/dotpe.jpg";
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Dropdown from "react-bootstrap/Dropdown";
+import "../Assets/Styles/Dynamicheader.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
 
+const Dynamicfood = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
 
-export default function NavItems() {
+  useEffect(() => {
+    const handleScroll = () => setScrollPosition(window.scrollY);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="drop">
-      <div className="dropdown">
+    <div
+      className={
+        scrollPosition > 200 ? "main-header sticky-nav" : "main-header"
+      }
+    >
+      <div className="top-fixed-navbar d-none d-md-block">
+        <div className="navbar navbar-expand-md nav-v1 top-bar">
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              width: "100%",
+              padding: "2px 30px",
+              background: "white",
+            }}
+          >
+            <div>
+              <img src={image1} alt="" />
+            </div>
+            <div className="drop">
+            <div className="dropdown">
         <button
-          className="dropbtn  text-white"
+          className="dropbtn  text-black"
           style={{
             fontWeight: 500,
             fontSize: "18px",
           }}
         >
-          Business Types 
+          Products
         </button>
         <div className="dropdown-content">
+          <a className="dropdown-item" href="#">
+            <div
+              className=" dropdown-item-title"
+              style={{ textAlign: "left", margin: "10px", padding: "5px" }}
+            >
+              <div className="product-name">
+                <div>
+                  <span className="">Online Store</span>
+                </div>
+                <hr />
+                <div>
+                  <span>Point of Sale(POS)</span>
+                  <br />
+                  <p>Website in devlopment</p>
+                </div>
+                <hr />
+                <div>
+                  <span>Maketing</span>
+                  <br />
+                  <p>Website in devlopment</p>
+                </div>
+                <hr />
+                <div>
+                  <span>Deliveries & Logistics</span>
+                  <br />
+                  <p>Website in devlopment</p>
+                </div>
+                <hr />
+                <div>
+                  <span>Payments</span>
+                  <br />
+                  <p>Website in devlopment</p>
+                </div>
+                <hr />
+                <div>
+                  <span>In-Store Solution</span>
+                  <br />
+                  <p>Website in devlopment</p>
+                </div>
+                <hr />
+                <div>
+                  <span>Whatsapp for Business</span>
+                  <br />
+                  <p>Website in devlopment</p>
+                </div>
+              </div>
+              <div></div>
+            </div>
+          </a>
+        </div>
+      </div>
+              <div className="dropdown">
+                <button className="dropbtn  text-black" style={{fontWeight:'500',fontSize:'18px'}}>Business Types</button>
+                <div className="dropdown-content">
           <a class="dropdown-item" href="#">
             <div className="d-flex align-items-baseline dropdown-item-title">
               <img
@@ -40,7 +125,7 @@ export default function NavItems() {
                       fontWeight:'600'
                     }}
                   >
-                  <Link to="/foodstack">Food & Beverage Industry</Link>{" "}
+                  <span>Food & Beverage Industry</span>{" "}
                   </div>
                   <FontAwesomeIcon
                     icon={faArrowRight}
@@ -143,18 +228,11 @@ export default function NavItems() {
             </div>
           </a>
         </div>
-      </div>
-      <div className="dropdown">
-        <button
-          className="dropbtn  text-white"
-          style={{
-            fontWeight: 500,
-            fontSize: "18px",
-          }}
-        >
-          Company
-        </button>
-        <div className="dropdown-content">
+              </div>
+              <div>
+                <div className="dropdown">
+                  <button className="dropbtn  text-black" style={{fontWeight:'500',fontSize:'18px'}}>Company</button>
+                  <div className="dropdown-content">
           <a class="dropdown-item" href="#">
             <div className="d-flex align-items-baseline dropdown-item-title">
               <img
@@ -192,7 +270,31 @@ export default function NavItems() {
           
        
         </div>
+                </div>
+              </div>
+            </div>
+
+            <div style={{ fontSize: "18px" }}>
+              <button
+                style={{
+                  
+                  border: "1px solid #006aff",
+                  color: "#006aff",
+                  padding: "9px 16px",
+                  fontWeight: 600,
+                 backgroundColor:'white',
+                  borderadius: '35px'
+                }}
+                className="rounded-5 h-100"
+              >
+                Request Demo
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
-}
+};
+
+export default Dynamicfood;

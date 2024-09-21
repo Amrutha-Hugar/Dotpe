@@ -87,7 +87,7 @@ const TextImageSwitcher = () => {
         <Mobilefood />
       ) : (
         <>
-          <div className="">
+          <div className="w-100" >
             <div className="sell">
             <h1  ref={elementRef} className={`text-start ${isVisible ? 'slide-in-down' : ''}`}>
               Ecosystem to sell everything
@@ -180,7 +180,7 @@ const TextImageSwitcher = () => {
                   style={{marginRight:'-30%',
                 }}
                   height={"500px"}
-                  width={"1100px"}
+                  width={"900px"}
                 />
                 <div className="image-bottom m-5 d-flex">
                   <img
@@ -189,8 +189,8 @@ const TextImageSwitcher = () => {
                     className="image-left rounded-5"
                     style={{marginLeft:'8%',
                     }}
-                    height={"350px"}
-                    width={"500px"}
+                    height={"250px"}
+                    width={"300px"}
                   />
 
                   <img
@@ -198,7 +198,7 @@ const TextImageSwitcher = () => {
                     alt="Image 3"
                     className="image-right  rounded-5 p-2 m-1"
                    
-                    height={"350px"}
+                    height={"250px"}
                     width={"700px"}
                   />
                 </div>

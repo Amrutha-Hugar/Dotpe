@@ -44,12 +44,13 @@ const Footer = () => {
       ) : (
       <div className="footer bg-black w-100" style={{ height: "350px" }}>
         <div className="foot-container ">
-          <div
-            className="foot d-flex text-white justify-content-center "
-            style={{ gap: "100px", marginTop: "-20px", marginRight:'150px' }}
+       <div className="d-flex justify-content-around">
+       <div
+            className="foot d-flex text-white  "
+            style={{ gap: "100px" }}
           >
             <div className="foot1 mt-5">
-              <p className="" style={{color:'#909090',fontWeight:'500'}}>Business</p>
+              <p className="text-right" style={{color:'#909090',fontWeight:'500',}}>Business</p>
               <ul>
                 <li>Food & Beverages</li>
                 <li>Retail</li>
@@ -57,7 +58,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="foot2 mt-5">
-              <p className="text-start" style={{color:'#909090',fontWeight:'500'}}>Dotpe</p>
+              <p className="" style={{color:'#909090',fontWeight:'500'}}>Dotpe</p>
               <ul>
                 <li>Home</li>
                 <li>Press & Media</li>
@@ -65,6 +66,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
+       </div>
           <hr className="h" style={{ marginTop: "-10px" }} />
           <br />
           <br />

@@ -1,0 +1,19 @@
+.seamless-container{
+    margin-top: 100px;
+}
+
+.seamless-content h1{
+    font-size: 56px;
+    color: #000000;
+    font-weight: bold;
+    line-height: 56px;
+ 
+}
+
+.seamless-content p{
+    font-size: 28px;
+    color: #000000;
+    opacity: 0.95;
+    text-align: center;
+    margin: 0 auto 3rem;
+}

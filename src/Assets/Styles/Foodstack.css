@@ -1,0 +1,8 @@
+.foodstack-container{
+    height: auto;
+}
+
+.foodstack-conteent{
+    background-color: rgb(7,7,8); /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom left,black,rgb(7, 7, 8), black , rgb(15, 1, 1));
+}

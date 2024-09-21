@@ -1,0 +1,19 @@
+.buildgrow-container{
+    margin-top: 100px;
+}
+
+.buildgrow-content h1{
+    font-size: 56px;
+    color: #000000;
+    font-weight: bold;
+    line-height: 56px;
+    
+}
+
+.buildgrow-content p{
+    font-size: 25px;
+    text-align: center;
+    line-height: 38px;
+    font-weight: 480;
+    margin-top: 2rem;
+}
